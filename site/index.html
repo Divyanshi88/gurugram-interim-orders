@@ -36,8 +36,8 @@
         <th style="width:48px">No.</th>
         <th style="width:104px">Date of order</th>
         <th style="width:160px">Judge</th>
-        <th style="width:168px">Order document</th>
-        <th style="width:270px">Defendants concerned</th>
+        <th style="width:200px">Order document</th>
+        <th style="width:250px">Defendants concerned</th>
         <th>Summary</th>
       </tr>
     </thead>
@@ -61,6 +61,35 @@
   </footer>
 
 </div>
+
+<div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-labelledby="ov-title">
+  <div class="sheet">
+    <header>
+      <div>
+        <h2 id="ov-title">Order</h2>
+        <p class="meta" id="ov-meta"></p>
+      </div>
+      <div class="sp"></div>
+      <button class="x" id="ov-close" type="button" aria-label="Close preview">&times;</button>
+    </header>
+    <div class="frame">
+      <object id="ov-frame" type="application/pdf" aria-label="Order document preview">
+        <div class="fallback">
+          <p><b>Your browser won\u2019t display PDFs inline.</b></p>
+          <p>Use <b>Open in new tab</b> or <b>Download PDF</b> below to read this order.</p>
+        </div>
+      </object>
+    </div>
+    <footer>
+      <a class="dl" id="ov-dl" href="#" download>Download PDF</a>
+      <a class="btn-v" id="ov-tab" href="#" target="_blank" rel="noopener">Open in new tab</a>
+      <span class="hint">Preview not loading? Use <b>Open in new tab</b>.</span>
+      <div class="sp"></div>
+      <button class="btn" type="button" onclick="closeView()">Close</button>
+    </footer>
+  </div>
+</div>
+
 <script src="assets/app.js"></script>
 </body>
 </html>
