@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Gurugram Interim Orders</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Gurugram Interim Orders</h1>
+    <p class="case">SFIO vs Adarsh Buildestate Ltd &amp; 186 others &nbsp;|&nbsp; CNR HRGR010070222019 &nbsp;|&nbsp; COMA/5/2019</p>
+    <p class="case">District &amp; Sessions Court, Gurugram &mdash; Court 26 &nbsp;|&nbsp; 18 May 2019 to 8 September 2026</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b id="n-orders">&ndash;</b><span>unique orders</span></div>
+    <div class="stat"><b id="n-dates">&ndash;</b><span>hearing dates</span></div>
+    <div class="stat"><b id="n-cont">&ndash;</b><span>contested</span></div>
+    <div class="stat"><b id="n-judges">&ndash;</b><span>judges</span></div>
+  </div>
+
+  <div class="tools">
+    <input id="q" type="search" placeholder="Filter by accused number, judge, date or wording — e.g. A-135, approver, proclaimed" autocomplete="off">
+    <button class="btn" id="contested" type="button">Contested only</button>
+    <button class="btn" id="clear" type="button">Clear</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:48px">No.</th>
+        <th style="width:104px">Date of order</th>
+        <th style="width:160px">Judge</th>
+        <th style="width:168px">Order document</th>
+        <th style="width:270px">Defendants concerned</th>
+        <th>Summary</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <div class="note">
+    <b>How to read this.</b> The court publishes one table row per defendant an order concerns, and sometimes
+    splits a single order across several one-page PDFs. The 434 published entries therefore resolve to the
+    149 orders listed here. Each download is the complete order, reassembled where the court had split it.
+  </div>
+
+  <footer>
+    <p><b>Known gaps.</b> Entry 50 (18 Jan 2021) was never uploaded by the court &mdash; eCourts returns
+    &ldquo;File Is Not Uploaded&rdquo;. Entries 141 and 164 are absent from the archives supplied; entry 164 is the
+    only entry on 22 Jul 2025, so that date has no document. The true order count is 149&ndash;151, with 149 confirmed.</p>
+    <p><b>On the summaries.</b> Every accused number, section, citation and date in this table was checked back
+    against the text of the order it is attributed to. The characterisation of an argument is editorial judgment
+    and has not been reviewed by a lawyer. Read the PDF before relying on any entry.</p>
+    <p>Filtering here is plain text matching. Contextual search is a later stage.</p>
+  </footer>
+
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

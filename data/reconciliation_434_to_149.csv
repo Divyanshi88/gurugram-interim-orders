@@ -1,0 +1,151 @@
+order,entry_range,entries,pages,mechanism
+2019-05-18 #1,1,1,1,"AS-IS - 1 entry, 1 order"
+2019-05-24 #1,2,1,1,"AS-IS - 1 entry, 1 order"
+2019-05-28 #1,3,1,1,"AS-IS - 1 entry, 1 order"
+2019-05-30 #1,4,1,1,"AS-IS - 1 entry, 1 order"
+2019-06-03 #1,5,1,1,"AS-IS - 1 entry, 1 order"
+2019-06-03 #2,6,1,15,"AS-IS - 1 entry, 1 order"
+2019-06-03 #3,7,1,73,"AS-IS - 1 entry, 1 order"
+2019-06-13 #1,8,1,2,"AS-IS - 1 entry, 1 order"
+2019-06-17 #1,9,1,2,"AS-IS - 1 entry, 1 order"
+2019-07-01 #1,10,1,2,"AS-IS - 1 entry, 1 order"
+2019-07-15 #1,11,1,1,"AS-IS - 1 entry, 1 order"
+2019-07-30 #1,12,1,17,"AS-IS - 1 entry, 1 order"
+2019-08-13 #1,13,1,4,"AS-IS - 1 entry, 1 order"
+2019-08-27 #1,14,1,1,"AS-IS - 1 entry, 1 order"
+2019-08-30 #1,15,1,1,"AS-IS - 1 entry, 1 order"
+2019-08-28 #1,16,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-04 #1,17,1,13,"AS-IS - 1 entry, 1 order"
+2019-09-05 #1,18,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-13 #1,19,1,2,"AS-IS - 1 entry, 1 order"
+2019-09-16 #1,20,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-16 #2,21,1,9,"AS-IS - 1 entry, 1 order"
+2019-09-17 #1,22,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-18 #1,23,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-18 #2,24,1,17,"AS-IS - 1 entry, 1 order"
+2019-09-18 #3,25,1,3,"AS-IS - 1 entry, 1 order"
+2019-09-20 #1,26,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-21 #1,27,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-23 #1,28,1,2,"AS-IS - 1 entry, 1 order"
+2019-09-24 #1,29,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-27 #1,30,1,1,"AS-IS - 1 entry, 1 order"
+2019-09-30 #1,31,1,1,"AS-IS - 1 entry, 1 order"
+2019-10-03 #1,32,1,6,"AS-IS - 1 entry, 1 order"
+2019-10-04 #1,33,1,1,"AS-IS - 1 entry, 1 order"
+2019-10-14 #1,34,1,1,"AS-IS - 1 entry, 1 order"
+2019-10-19 #1,35,1,14,"AS-IS - 1 entry, 1 order"
+2019-11-02 #1,36,1,15,"AS-IS - 1 entry, 1 order"
+2019-11-08 #1,37,1,1,"AS-IS - 1 entry, 1 order"
+2019-11-22 #1,38,1,18,"AS-IS - 1 entry, 1 order"
+2019-12-17 #1,39,1,16,"AS-IS - 1 entry, 1 order"
+2020-01-31 #1,40-41,2,10,DEDUPED - 2 identical copies collapsed to 1
+2020-05-08 #1,42,1,1,"AS-IS - 1 entry, 1 order"
+2020-09-24 #1,43-44,2,3,DEDUPED - 2 identical copies collapsed to 1
+2020-10-06 #1,45,1,1,"AS-IS - 1 entry, 1 order"
+2021-01-14 #1,46-47,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-01-15 #1,48-49,2,3,DEDUPED - 2 identical copies collapsed to 1
+2021-01-18 #1,51-52,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-01-19 #1,53-54,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-01-21 #1,55-56,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-02-02 #1,57-58,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-02-19 #1,59-60,2,4,DEDUPED - 2 identical copies collapsed to 1
+2021-02-24 #1,61-62,2,1,DEDUPED - 2 identical copies collapsed to 1
+2021-03-05 #1,63,1,1,"AS-IS - 1 entry, 1 order"
+2021-03-19 #1,64,1,1,"AS-IS - 1 entry, 1 order"
+2021-04-02 #1,65,1,3,"AS-IS - 1 entry, 1 order"
+2021-04-16 #1,66,1,2,"AS-IS - 1 entry, 1 order"
+2021-04-30 #1,67,1,1,"AS-IS - 1 entry, 1 order"
+2021-05-20 #1,68,1,1,"AS-IS - 1 entry, 1 order"
+2021-08-04 #1,69,1,2,"AS-IS - 1 entry, 1 order"
+2021-08-04 #2,70,1,2,"AS-IS - 1 entry, 1 order"
+2021-08-17 #1,71,1,3,"AS-IS - 1 entry, 1 order"
+2021-09-06 #1,72,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-08 #1,73,1,6,"AS-IS - 1 entry, 1 order"
+2021-09-09 #1,74,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-15 #1,75,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-15 #2,76,1,4,"AS-IS - 1 entry, 1 order"
+2021-09-15 #3,77,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-15 #4,78,1,5,"AS-IS - 1 entry, 1 order"
+2021-09-15 #5,79,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-17 #1,80,1,2,"AS-IS - 1 entry, 1 order"
+2021-09-22 #1,81,1,1,"AS-IS - 1 entry, 1 order"
+2021-09-22 #2,82,1,25,"AS-IS - 1 entry, 1 order"
+2021-09-17 #2,83,1,1,"AS-IS - 1 entry, 1 order"
+2021-10-14 #1,84,1,1,"AS-IS - 1 entry, 1 order"
+2021-10-30 #1,85,1,3,"AS-IS - 1 entry, 1 order"
+2021-12-23 #1,86,1,1,"AS-IS - 1 entry, 1 order"
+2022-02-14 #1,87,1,1,"AS-IS - 1 entry, 1 order"
+2022-03-25 #1,88,1,39,"AS-IS - 1 entry, 1 order"
+2022-04-02 #1,89,1,2,"AS-IS - 1 entry, 1 order"
+2022-04-20 #1,90,1,1,"AS-IS - 1 entry, 1 order"
+2022-04-28 #1,91,1,1,"AS-IS - 1 entry, 1 order"
+2022-05-07 #1,92-93,2,2,DEDUPED - 2 identical copies collapsed to 1
+2022-05-11 #1,94-95,2,2,DEDUPED - 2 identical copies collapsed to 1
+2022-05-10 #1,96-97,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-05-30 #1,98-99,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-06-02 #1,100,1,2,"AS-IS - 1 entry, 1 order"
+2022-06-07 #1,101-102,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-07-02 #1,103-104,2,11,DEDUPED - 2 identical copies collapsed to 1
+2022-07-08 #1,105,1,2,"AS-IS - 1 entry, 1 order"
+2022-07-22 #1,106-107,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-07-27 #1,108,1,1,"AS-IS - 1 entry, 1 order"
+2022-07-27 #2,109-110,2,6,DEDUPED - 2 identical copies collapsed to 1
+2022-07-08 #2,111,1,3,"AS-IS - 1 entry, 1 order"
+2022-08-30 #1,112-113,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-08-30 #2,114,1,4,"AS-IS - 1 entry, 1 order"
+2022-08-30 #3,115-116,2,8,DEDUPED - 2 identical copies collapsed to 1
+2022-10-18 #1,117-118,2,1,DEDUPED - 2 identical copies collapsed to 1
+2022-10-18 #2,119,1,3,"AS-IS - 1 entry, 1 order"
+2022-10-18 #3,120-121,2,9,DEDUPED - 2 identical copies collapsed to 1
+2022-12-09 #1,122,1,1,"AS-IS - 1 entry, 1 order"
+2022-12-09 #2,123,1,8,"AS-IS - 1 entry, 1 order"
+2023-02-08 #1,124-125,2,1,DEDUPED - 2 identical copies collapsed to 1
+2023-02-08 #2,126-127,2,9,DEDUPED - 2 identical copies collapsed to 1
+2023-04-03 #1,128-129,2,1,DEDUPED - 2 identical copies collapsed to 1
+2023-04-03 #2,130-131,2,11,DEDUPED - 2 identical copies collapsed to 1
+2023-05-19 #1,132-133,2,1,DEDUPED - 2 identical copies collapsed to 1
+2023-05-19 #2,134,1,1,"AS-IS - 1 entry, 1 order"
+2023-05-19 #3,135,1,1,"AS-IS - 1 entry, 1 order"
+2023-05-19 #4,136,1,1,"AS-IS - 1 entry, 1 order"
+2023-05-22 #1,137,1,3,"AS-IS - 1 entry, 1 order"
+2023-05-22 #2,138,1,15,"AS-IS - 1 entry, 1 order"
+2023-05-30 #1,139-140,2,1,DEDUPED - 2 identical copies collapsed to 1
+2023-05-30 #2,142,1,10,"AS-IS - 1 entry, 1 order"
+2023-08-29 #1,143,1,7,"AS-IS - 1 entry, 1 order"
+2023-09-26 #1,144,1,1,"AS-IS - 1 entry, 1 order"
+2023-09-26 #2,145,1,1,"AS-IS - 1 entry, 1 order"
+2023-09-30 #1,146,1,2,"AS-IS - 1 entry, 1 order"
+2023-11-17 #1,147-148,2,1,DEDUPED - 2 identical copies collapsed to 1
+2024-02-09 #1,149,1,7,"AS-IS - 1 entry, 1 order"
+2024-04-01 #1,150,1,1,"AS-IS - 1 entry, 1 order"
+2024-05-03 #1,151,1,8,"AS-IS - 1 entry, 1 order"
+2024-05-03 #2,152,1,2,"AS-IS - 1 entry, 1 order"
+2024-06-04 #1,153,1,1,"AS-IS - 1 entry, 1 order"
+2024-07-29 #1,154,1,6,"AS-IS - 1 entry, 1 order"
+2024-09-03 #1,155,1,8,"AS-IS - 1 entry, 1 order"
+2024-11-13 #1,156,1,8,"AS-IS - 1 entry, 1 order"
+2024-12-03 #1,157,1,1,"AS-IS - 1 entry, 1 order"
+2025-01-13 #1,158,1,1,"AS-IS - 1 entry, 1 order"
+2025-01-18 #1,159,1,9,"AS-IS - 1 entry, 1 order"
+2025-02-27 #1,160,1,9,"AS-IS - 1 entry, 1 order"
+2025-04-07 #1,161,1,1,"AS-IS - 1 entry, 1 order"
+2025-05-02 #1,162,1,1,"AS-IS - 1 entry, 1 order"
+2025-05-29 #1,163,1,1,"AS-IS - 1 entry, 1 order"
+2025-09-19 #1,165,1,10,"AS-IS - 1 entry, 1 order"
+2025-11-06 #1,166,1,12,"AS-IS - 1 entry, 1 order"
+2026-01-07 #1,167,1,13,"AS-IS - 1 entry, 1 order"
+2026-02-20 #1,168,1,1,"AS-IS - 1 entry, 1 order"
+2026-02-20 #2,169,1,1,"AS-IS - 1 entry, 1 order"
+2026-02-25 #1,170,1,1,"AS-IS - 1 entry, 1 order"
+2026-02-25 #2,171,1,1,"AS-IS - 1 entry, 1 order"
+2026-03-18 #1,172-265,94,5,MERGED - 5 single-page files joined into one order
+2026-04-17 #1,266-380,115,2,DEDUPED - 115 identical copies collapsed to 1
+2026-04-17 #2,381,1,7,"AS-IS - 1 entry, 1 order"
+2026-06-04 #1,382-427,46,1,DEDUPED - 46 identical copies collapsed to 1
+2026-07-10 #1,428,1,8,"AS-IS - 1 entry, 1 order"
+2026-07-29 #1,429,1,8,"AS-IS - 1 entry, 1 order"
+2026-08-19 #1,430,1,13,"AS-IS - 1 entry, 1 order"
+2026-08-25 #1,431,1,13,"AS-IS - 1 entry, 1 order"
+2026-08-31 #1,432,1,1,"AS-IS - 1 entry, 1 order"
+2026-09-07 #1,433,1,1,"AS-IS - 1 entry, 1 order"
+2026-09-08 #1,434,1,2,"AS-IS - 1 entry, 1 order"
