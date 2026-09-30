@@ -1,0 +1,31 @@
+# Render blueprint — static site serving the order index.
+# Render reads this automatically when the repo is connected, so no manual
+# configuration is needed. Publish directory is ./site
+services:
+  - type: web
+    name: gurugram-interim-orders
+    runtime: static
+    staticPublishPath: ./site
+    pullRequestPreviewsEnabled: false
+    headers:
+      # keep the page out of search results; it is link-shared, not published
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      # order PDFs never change once published
+      - path: /orders/*
+        name: Cache-Control
+        value: public, max-age=604800, immutable
+      # the index and its data may change
+      - path: /index.html
+        name: Cache-Control
+        value: public, max-age=300
+      - path: /data/*
+        name: Cache-Control
+        value: public, max-age=300

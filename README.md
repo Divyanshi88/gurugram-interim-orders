@@ -3,7 +3,7 @@
 A browsable, downloadable index of every interim order in **CNR HRGR010070222019 / COMA 5 of 2019**,
 District & Sessions Court, Gurugram (Court 26), covering **18 May 2019 to 8 September 2026**.
 
-**Live page:** see the repository's GitHub Pages URL (Settings → Pages).
+**Live page:** deployed from `render.yaml` as a Render static site (publish directory `site/`).
 
 ---
 
@@ -62,6 +62,12 @@ Because 164 is the only entry on its date, the true order count is **149–151, 
 A further caution: **the portal's listing date is not always the date on the order.** Entries filed under
 18 September 2019 carry order text dated 11 July 2019. Grouping follows the portal date, because that is
 what the court's own index uses.
+
+## Deploying
+
+The repo carries a `render.yaml` blueprint. On Render: **New → Blueprint**, pick this repo, apply.
+Nothing to configure — it serves `site/` as a static site and sets caching and `noindex` headers.
+Every push to `main` redeploys automatically.
 
 ## Repository layout
 
