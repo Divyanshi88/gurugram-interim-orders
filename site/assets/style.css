@@ -143,3 +143,5 @@ mark.syn{background:transparent;color:inherit;border-bottom:2px solid #e0b000;bo
 .empty{text-align:center;color:var(--muted);padding:28px 12px}
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) mark:not(.syn){background:#7a6000;color:#fff} }
 :root[data-theme="dark"] mark:not(.syn){background:#7a6000;color:#fff}
+.mnote{margin:-4px 0 12px;font-size:12.3px;color:var(--muted)}
+.btn:disabled{opacity:.75;cursor:progress}

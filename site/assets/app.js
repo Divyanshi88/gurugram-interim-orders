@@ -31,14 +31,27 @@ function snippetHtml(o){
   if (sn.card) return "";                       // matched the summary itself, already shown
   const body = sn.words.map(x => x.hit >= 0.8 ? `<mark>${esc(x.w)}</mark>`
                                : x.hit > 0 ? `<mark class="syn">${esc(x.w)}</mark>` : esc(x.w)).join(" ");
-  return `<div class="snip"><span class="snip-l">In the order text</span>${sn.lead ? "… " : ""}${body}${sn.tail ? " …" : ""}</div>`;
+  const lab = h.keyword ? "In the order text" : "Closest passage by meaning";
+  return `<div class="snip"><span class="snip-l">${lab}</span>${sn.lead ? "… " : ""}${body}${sn.tail ? " …" : ""}</div>`;
 }
 
 const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const ym = a => MON[a[1] - 1] + " " + a[0];
 
+let SEQ = 0;
+const MEANING_N = 30;               // meaning mode ranks every order; show the closest ones
 function render(){
   const q = $("#q").value.trim();
+  const seq = ++SEQ;
+  if (q && ENGINE && Meaning.state === "on" && Meaning.ready() && !/["“”]/.test(q)) {
+    Meaning.sem(q).then(sem => { if (seq === SEQ) draw(q, sem); })
+                  .catch(err => { console.warn(err); if (seq === SEQ) draw(q, null); });
+    return;
+  }
+  draw(q, null);
+}
+
+function draw(q, sem){
   const onlyC = $("#contested").classList.contains("on");
   const byDate = $("#sort").value === "date";
   let note = "";
@@ -47,7 +60,7 @@ function render(){
   if (!q) {
     view = ALL.filter(o => !onlyC || o.contested);
   } else if (ENGINE) {
-    const r = ENGINE.search(q);
+    const r = ENGINE.search(q, sem ? MEANING_N : 0, sem);
     TERMS = r.terms;
     const bySl = new Map(ALL.map(o => [o.sl, o]));
     view = r.results.map(x => { HITS.set(x.sl, x); return bySl.get(x.sl); })
@@ -64,8 +77,10 @@ function render(){
   }
   $("#count").textContent = !q
     ? (view.length === ALL.length ? ALL.length + " orders" : view.length + " of " + ALL.length + " orders")
-    : view.length + " matching order" + (view.length === 1 ? "" : "s") +
-      (ENGINE ? (byDate ? " · by date" : " · best match first") : "");
+    : sem
+      ? view.length + " closest orders by words and meaning" + (byDate ? " · by date" : "")
+      : view.length + " matching order" + (view.length === 1 ? "" : "s") +
+        (ENGINE ? (byDate ? " · by date" : " · best match first") : "");
   $("#qnote").textContent = note;
   $("#qnote").hidden = !note;
 
@@ -119,18 +134,56 @@ fetch("data/orders.json").then(r => r.json()).then(d => {
   let t = 0;
   $("#q").oninput = () => { clearTimeout(t); t = setTimeout(render, 120); };
   $("#sort").onchange = render;
+  $("#meaning").onclick = toggleMeaning;
   $("#contested").onclick = e => { e.currentTarget.classList.toggle("on"); render(); };
   $("#clear").onclick = () => {
     $("#q").value = ""; $("#contested").classList.remove("on"); render();
   };
   // full-text index: if it fails, the page keeps working with plain filtering
   fetch("data/search.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(sd => { ENGINE = OrderSearch.build(ALL, sd); document.body.classList.add("ft"); render(); })
+    .then(sd => {
+      ENGINE = OrderSearch.build(ALL, sd); document.body.classList.add("ft");
+      $("#meaning").hidden = false; render();
+      let pref = null; try { pref = localStorage.getItem("meaning"); } catch (e) {}
+      if (pref === "on") toggleMeaning();          // model is cached after the first time
+    })
     .catch(err => console.warn("Full-text search unavailable, using plain filter:", err));
 }).catch(e => {
   $("#tbody").innerHTML = `<tr><td colspan="6">Could not load the order list (${esc(e.message)}).</td></tr>`;
 });
 
+
+/* ---------- search by meaning ---------- */
+const MEANING_LABEL = "Search by meaning";
+function setMeaningBtn(text, on, busy){
+  const b = $("#meaning");
+  b.textContent = text; b.classList.toggle("on", !!on); b.disabled = !!busy;
+  b.setAttribute("aria-pressed", on ? "true" : "false");
+}
+function toggleMeaning(){
+  const save = v => { try { localStorage.setItem("meaning", v); } catch (e) {} };
+  if (Meaning.state === "on") {
+    Meaning.state = "off"; save("off"); setMeaningBtn(MEANING_LABEL, false); render(); return;
+  }
+  Meaning.state = "loading";
+  setMeaningBtn("Loading model…", false, true);
+  $("#mnote").hidden = false;
+  $("#mnote").textContent = "Downloading the meaning model (about 44 MB, first time only; it is kept by your browser afterwards).";
+  Meaning.load(ENGINE, f => setMeaningBtn("Loading model… " + Math.round(f * 100) + "%", false, true))
+    .then(() => {
+      Meaning.state = "on"; save("on");
+      setMeaningBtn(MEANING_LABEL + " ✓", true);
+      $("#mnote").textContent = "Meaning search is on: results also include orders that describe the same thing in different words. " +
+        "For an exact line you remember, keyword search (button off) is more precise.";
+      render();
+    })
+    .catch(err => {
+      console.warn("Meaning search failed to load:", err);
+      Meaning.state = "off"; save("off");
+      setMeaningBtn(MEANING_LABEL, false);
+      $("#mnote").textContent = "Meaning search could not be loaded in this browser (" + err.message + "). Keyword search still works.";
+    });
+}
 
 /* ---------- PDF preview ---------- */
 function openView(sl){

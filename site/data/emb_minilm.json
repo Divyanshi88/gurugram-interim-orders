@@ -1,0 +1,1 @@
+{"model":"Xenova/all-MiniLM-L6-v2","dtype":"q8","pooling":"mean","dim":384,"n":2127,"scale":127,"chunkHash":"16dd9337"}

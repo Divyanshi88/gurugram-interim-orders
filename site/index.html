@@ -29,6 +29,8 @@
       <option value="best">Best match</option>
       <option value="date">Date</option>
     </select>
+    <button class="btn" id="meaning" type="button" hidden aria-pressed="false"
+      title="Also find orders that say the same thing in different words. Downloads a 44 MB model the first time.">Search by meaning</button>
     <button class="btn" id="contested" type="button">Contested only</button>
     <button class="btn" id="clear" type="button">Clear</button>
     <span class="count" id="count"></span>
@@ -37,6 +39,7 @@
     (<i>Chohan</i> finds Chauhan), plain words find legal ones (<i>absconding</i> finds proclaimed person),
     a year or month puts that period first (<i>mid 2021 bail</i>), and <i>"quotation marks"</i> require the exact wording.</p>
   <p class="qnote" id="qnote" hidden></p>
+  <p class="mnote" id="mnote" hidden></p>
 
   <table>
     <thead>
@@ -99,6 +102,7 @@
 </div>
 
 <script src="assets/search.js"></script>
+<script src="assets/meaning.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

@@ -57,7 +57,7 @@ run in a browser). Full per-category tables: `results_queries.json`, `results_ho
 | | First visit | After that |
 |---|---|---|
 | Keyword search (shipped) | ~0.2 MB compressed index | instant; builds in ~0.1 s, each search < 1 ms |
-| Embeddings | ~44 MB: 21 MB model + 22.5 MB ONNX runtime + 0.9 MB library | cached; per-query cost not measured in-browser (estimate: tens of ms) |
+| Embeddings | ~44 MB: 21 MB model + 22.5 MB ONNX runtime + 0.9 MB library | cached; measured 83 ms per search in the browser, model load 7 s from local disk |
 
 Embeddings would also need either third-party downloads (jsDelivr for the runtime, Hugging Face
 for the model) or self-hosting ~44 MB on Render. No backend is needed for either option.
@@ -86,3 +86,22 @@ The browser engine (`site/assets/search.js`) was checked against the Python pipe
 * 270 queries is enough to see the direction, not to separate methods a few points apart.
   The realistic-set differences between the top methods (93–96%) are within noise.
 * Search runs on extracted text; a word missed by extraction cannot be found.
+
+## Shipped: "Search by meaning" button (opt-in)
+
+Built as recommended above: keyword search is the default; the button loads all-MiniLM-L6-v2
+(quantized, self-hosted under `site/models/`, runtime under `site/assets/vendor/`; no third-party
+requests) and blends it with keyword ranking (reciprocal-rank fusion, equal weight), showing the
+closest 30 orders. Document vectors are int8, built with the same model file the browser runs
+(`scripts/build_embeddings.mjs`), and carry a fingerprint of the chunk texts so a stale file is refused.
+
+Measured on the shipped code (`search_eval/eval_meaning.mjs`, and again inside the browser — identical):
+
+| Recall in top 5 | Keyword (default) | With "Search by meaning" |
+|---|---:|---:|
+| Realistic set (210) | 96% | 93% |
+| Hard held-out set (60) | 72% | 80% |
+| of which no shared words (25) | 44% | 68% |
+
+Browser: first load ~7 s from local disk (longer over a slow connection, 44 MB), 1.4 s on later
+visits from the browser cache, 83 ms per search. The choice is remembered per browser.

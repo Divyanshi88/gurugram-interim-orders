@@ -122,7 +122,9 @@
     }
     const chunkNorm = i => chunks[i]._n || (chunks[i]._n = " " + toks(chunks[i].text).join(" ") + " ");
 
-    function search(q, limit) {
+    // sem (optional, "search by meaning"): {vec: Float32Array query embedding, E: Int8Array of
+    // N x dim chunk embeddings}. Fused with the keyword ranking by reciprocal rank (k = 60).
+    function search(q, limit, sem) {
       const terms = expand(q);
       const s = new Float64Array(N);
       for (const [w, wt] of terms) {
@@ -150,9 +152,28 @@
         return cmp(win[0], ym) <= 0 && cmp(ym, win[1]) <= 0;
       };
       const res = [];
-      for (const [sl, r] of best) {
-        const o = bySl.get(sl);
-        res.push({ sl, score: r.score, inWindow: inWin(o), chunk: r.chunk });
+      if (sem && !ph.length) {
+        const dim = sem.vec.length, E = sem.E, v = sem.vec, eb = new Map();
+        for (let i = 0; i < N; i++) {
+          let d = 0; const o = i * dim;
+          for (let k = 0; k < dim; k++) d += E[o + k] * v[k];
+          const cur = eb.get(chunks[i].sl);
+          if (!cur || d > cur.score) eb.set(chunks[i].sl, { score: d, chunk: i });
+        }
+        const lexRank = new Map([...best].sort((x, y) => y[1].score - x[1].score || x[0] - y[0]).map(([sl], i) => [sl, i + 1]));
+        const semRank = new Map([...eb].sort((x, y) => y[1].score - x[1].score || x[0] - y[0]).map(([sl], i) => [sl, i + 1]));
+        const miss = lexRank.size + 1;           // orders with no keyword match share the next rank
+        for (const o of orders) {
+          const lr = lexRank.get(o.sl) || miss, sr = semRank.get(o.sl);
+          const lx = best.get(o.sl);
+          res.push({ sl: o.sl, score: 1 / (60 + lr) + 1 / (60 + sr), inWindow: inWin(o),
+                     chunk: lx ? lx.chunk : eb.get(o.sl).chunk, keyword: !!lx });
+        }
+      } else {
+        for (const [sl, r] of best) {
+          const o = bySl.get(sl);
+          res.push({ sl, score: r.score, inWindow: inWin(o), chunk: r.chunk, keyword: true });
+        }
       }
       // orders inside a date the query names come first, then by text relevance
       res.sort((a, c) => (c.inWindow - a.inWindow) || (c.score - a.score) || (a.sl - c.sl));
@@ -178,7 +199,17 @@
       };
     }
 
-    return { search, snippet, toks, expand, dateWindow, stats: { chunks: N, vocab: vocab.length } };
+    // fingerprint of the chunk texts, so embeddings built for a different index are refused
+    function chunkHash() {
+      let h = 2166136261 >>> 0;
+      for (const c of chunks) for (let i = 0; i < c.text.length; i++) {
+        h ^= c.text.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0;
+      }
+      return h.toString(16);
+    }
+
+    return { search, snippet, toks, expand, dateWindow, chunkHash,
+             chunkTexts: () => chunks.map(c => c.text), stats: { chunks: N, vocab: vocab.length } };
   }
 
   const api = { build, toks, dateWindow };
