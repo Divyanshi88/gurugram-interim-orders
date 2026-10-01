@@ -1,0 +1,2646 @@
+[
+ {
+  "qid": "A01-q",
+  "kind": "quote",
+  "query": "bulky record in four boxes, complaint taken subject to verification",
+  "gold": [
+   1
+  ],
+  "source_passage_id": 1,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A01-p",
+  "kind": "paraphrase",
+  "query": "SFIO filed its fraud complaint with records packed in several cartons",
+  "gold": [
+   1
+  ],
+  "source_passage_id": 1,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A01-v",
+  "kind": "vague",
+  "query": "May 2019 SFIO complaint filed, huge pile of records",
+  "gold": [
+   1
+  ],
+  "source_passage_id": 1,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A02-q",
+  "kind": "quote",
+  "query": "investigating officer will take guidelines from department and submit his stand",
+  "gold": [
+   2
+  ],
+  "source_passage_id": 2,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A02-p",
+  "kind": "paraphrase",
+  "query": "investigator to ask his bosses before handing accused a digital copy of the records",
+  "gold": [
+   2
+  ],
+  "source_passage_id": 2,
+  "weak": false,
+  "note": "soft copy request; decision recorded later in sl4"
+ },
+ {
+  "qid": "A02-v",
+  "kind": "vague",
+  "query": "late May 2019 accused wanted soft copy of the record",
+  "gold": [
+   2,
+   4
+  ],
+  "source_passage_id": 2,
+  "weak": false,
+  "note": "sl4 (30.05.2019) records the soft-copy prayer being declined"
+ },
+ {
+  "qid": "A03-q",
+  "kind": "quote",
+  "query": "Ravi Kumar Sondhi sessions judge Gurugram dated 3 June 2019",
+  "gold": [
+   5,
+   6,
+   7
+  ],
+  "source_passage_id": 3,
+  "weak": true,
+  "note": "signature block; sl6/sl7 are the same judge and date"
+ },
+ {
+  "qid": "A03-p",
+  "kind": "paraphrase",
+  "query": "Vivek Harivyasi's new lawyer filed power of attorney, cognizance order to come after lunch",
+  "gold": [
+   5
+  ],
+  "source_passage_id": 3,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A03-v",
+  "kind": "vague",
+  "query": "early June 2019 cognizance order to be passed after lunch",
+  "gold": [
+   5
+  ],
+  "source_passage_id": 3,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A04-q",
+  "kind": "quote",
+  "query": "Vijay Jhindal, Rajkumar Modi, Shinder Pal Singh also liable to be prosecuted",
+  "gold": [
+   6,
+   24
+  ],
+  "source_passage_id": 4,
+  "weak": false,
+  "note": "same list repeated in corrected summoning order sl24"
+ },
+ {
+  "qid": "A04-p",
+  "kind": "paraphrase",
+  "query": "summoning order saying Jhindal, Raj Kumar Modi and Sandhu must also face trial",
+  "gold": [
+   6,
+   7,
+   24
+  ],
+  "source_passage_id": 4,
+  "weak": false,
+  "note": "sl7 detailed cognizance order, sl24 correction order"
+ },
+ {
+  "qid": "A04-v",
+  "kind": "vague",
+  "query": "mid 2019 order listing Sangwan Jhindal Sandhu for prosecution",
+  "gold": [
+   6,
+   7,
+   24
+  ],
+  "source_passage_id": 4,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A05-q",
+  "kind": "quote",
+  "query": "after getting intimation by mail and special messenger they produced accused today",
+  "gold": [
+   9
+  ],
+  "source_passage_id": 5,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A05-p",
+  "kind": "paraphrase",
+  "query": "Jaipur police finally brought the Modi brothers after an email and hand-delivered notice",
+  "gold": [
+   9
+  ],
+  "source_passage_id": 5,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A05-v",
+  "kind": "vague",
+  "query": "June 2019 vacation judge, Jaipur police produce Modi brothers",
+  "gold": [
+   9
+  ],
+  "source_passage_id": 5,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A06-q",
+  "kind": "quote",
+  "query": "Priyanka Modi remanded in judicial custody, produce her by video conferencing",
+  "gold": [
+   11
+  ],
+  "source_passage_id": 6,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A06-p",
+  "kind": "paraphrase",
+  "query": "Priyanka Modi sent back to jail and to appear next time over video link",
+  "gold": [
+   11
+  ],
+  "source_passage_id": 6,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A06-v",
+  "kind": "vague",
+  "query": "July 2019 Priyanka Modi kept in jail custody",
+  "gold": [
+   10,
+   11
+  ],
+  "source_passage_id": 6,
+  "weak": false,
+  "note": "sl10 (01.07.2019) also remands her"
+ },
+ {
+  "qid": "A07-q",
+  "kind": "quote",
+  "query": "reply filed to Raj Kumar Modi's regular bail plea after surrender",
+  "gold": [
+   13
+  ],
+  "source_passage_id": 7,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A07-p",
+  "kind": "paraphrase",
+  "query": "prosecution answered Raj Kumar Modi's request for bail after he gave himself up",
+  "gold": [
+   13
+  ],
+  "source_passage_id": 7,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A07-v",
+  "kind": "vague",
+  "query": "August 2019 Raj Kumar Modi surrendered and sought bail",
+  "gold": [
+   13,
+   16
+  ],
+  "source_passage_id": 7,
+  "weak": false,
+  "note": "sl16 (30.08.2019) dismisses that bail plea"
+ },
+ {
+  "qid": "A08-q",
+  "kind": "quote",
+  "query": "by separate detailed order all regular bail applications of accused dismissed",
+  "gold": [
+   15
+  ],
+  "source_passage_id": 8,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A08-p",
+  "kind": "paraphrase",
+  "query": "a dozen directors' requests for release turned down and they were taken into custody",
+  "gold": [
+   15
+  ],
+  "source_passage_id": 8,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A08-v",
+  "kind": "vague",
+  "query": "end of August 2019 bail refused to a dozen accused",
+  "gold": [
+   15
+  ],
+  "source_passage_id": 8,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A09-q",
+  "kind": "quote",
+  "query": "let fresh production warrants for these three accused be issued",
+  "gold": [
+   17
+  ],
+  "source_passage_id": 9,
+  "weak": false,
+  "note": "sl21 says 'these nine accused'"
+ },
+ {
+  "qid": "A09-p",
+  "kind": "paraphrase",
+  "query": "Jaipur jail kept not sending the prisoners, so new orders issued and explanation sought",
+  "gold": [
+   14,
+   17,
+   21
+  ],
+  "source_passage_id": 9,
+  "weak": false,
+  "note": "non-production from Central Jail Jaipur + explanation called"
+ },
+ {
+  "qid": "A09-v",
+  "kind": "vague",
+  "query": "September 2019 Jaipur jail not producing accused",
+  "gold": [
+   17,
+   21
+  ],
+  "source_passage_id": 9,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A10-q",
+  "kind": "quote",
+  "query": "file put up awaiting further orders of apex court, Vijay Shukla to appear",
+  "gold": [
+   19
+  ],
+  "source_passage_id": 10,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A10-p",
+  "kind": "paraphrase",
+  "query": "Vijay Shukla told to keep coming while the Supreme Court extended his protection",
+  "gold": [
+   18,
+   19
+  ],
+  "source_passage_id": 10,
+  "weak": false,
+  "note": "sl18 same pattern a week earlier"
+ },
+ {
+  "qid": "A10-v",
+  "kind": "vague",
+  "query": "Sept 2019 Vijay Shukla supreme court interim protection",
+  "gold": [
+   18,
+   19,
+   26
+  ],
+  "source_passage_id": 10,
+  "weak": false,
+  "note": "sl26: SC declines to continue protection"
+ },
+ {
+  "qid": "A11-q",
+  "kind": "quote",
+  "query": "Rajesh Ranjan advocate directed to help police serve notice on surety",
+  "gold": [
+   21
+  ],
+  "source_passage_id": 11,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A11-p",
+  "kind": "paraphrase",
+  "query": "lawyer who identified the guarantor was told to help police reach her but did nothing",
+  "gold": [
+   21
+  ],
+  "source_passage_id": 11,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A11-v",
+  "kind": "vague",
+  "query": "Sept 2019 notice to Raj Kumar Modi's surety not served",
+  "gold": [
+   17,
+   21
+  ],
+  "source_passage_id": 11,
+  "weak": false,
+  "note": "sl17 issues fresh s.446 notice to surety Rekha Modi"
+ },
+ {
+  "qid": "A12-q",
+  "kind": "quote",
+  "query": "now all accused directed to appear on 3.10.2019, Sondhi",
+  "gold": [
+   22
+  ],
+  "source_passage_id": 12,
+  "weak": true,
+  "note": "boilerplate closing line"
+ },
+ {
+  "qid": "A12-p",
+  "kind": "paraphrase",
+  "query": "six accused no longer had to give up passports since SFIO admitted no evidence",
+  "gold": [
+   22
+  ],
+  "source_passage_id": 12,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A12-v",
+  "kind": "vague",
+  "query": "Sept 2019 passport condition dropped for six accused",
+  "gold": [
+   22
+  ],
+  "source_passage_id": 12,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A13-q",
+  "kind": "quote",
+  "query": "file taken up as 11.11.2019 declared local holiday, all concerned informed",
+  "gold": [
+   37
+  ],
+  "source_passage_id": 13,
+  "weak": true,
+  "note": "only 'local holiday' order"
+ },
+ {
+  "qid": "A13-p",
+  "kind": "paraphrase",
+  "query": "hearing moved because that day was declared a local holiday",
+  "gold": [
+   37
+  ],
+  "source_passage_id": 13,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A13-v",
+  "kind": "vague",
+  "query": "November 2019 local holiday adjournment",
+  "gold": [
+   37
+  ],
+  "source_passage_id": 13,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A14-q",
+  "kind": "quote",
+  "query": "PP said he gave all documents in pendrive to three counsels",
+  "gold": [
+   39
+  ],
+  "source_passage_id": 14,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A14-p",
+  "kind": "paraphrase",
+  "query": "prosecutor gave files on a USB stick to three lawyers, unsure which one is current",
+  "gold": [
+   39
+  ],
+  "source_passage_id": 14,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A14-v",
+  "kind": "vague",
+  "query": "late 2019 documents on pen drive given to accused's lawyer",
+  "gold": [
+   38,
+   39
+  ],
+  "source_passage_id": 14,
+  "weak": false,
+  "note": "sl38 (22.11.2019) records pendrive supply to A-141"
+ },
+ {
+  "qid": "A15-q",
+  "kind": "quote",
+  "query": "adjourned on account of outbreak of novel coronavirus for purpose already fixed",
+  "gold": [
+   41,
+   42,
+   44
+  ],
+  "source_passage_id": 15,
+  "weak": false,
+  "note": "same COVID adjournment wording in 42, 44"
+ },
+ {
+  "qid": "A15-p",
+  "kind": "paraphrase",
+  "query": "nobody present, case put off for months over the pandemic under district judge's order",
+  "gold": [
+   41
+  ],
+  "source_passage_id": 15,
+  "weak": false,
+  "note": "44 is a one-day push; 42 not per DJ order"
+ },
+ {
+  "qid": "A15-v",
+  "kind": "vague",
+  "query": "May 2020 covid lockdown adjournment",
+  "gold": [
+   41
+  ],
+  "source_passage_id": 15,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A16-q",
+  "kind": "quote",
+  "query": "file taken up on application for furnishing bail and surety bonds",
+  "gold": [
+   22,
+   43,
+   76,
+   79,
+   105,
+   106,
+   107,
+   108
+  ],
+  "source_passage_id": 16,
+  "weak": true,
+  "note": "generic opening; grep 'application.{0,80}for furnishing bail bond(s) and surety bond(s)'"
+ },
+ {
+  "qid": "A16-p",
+  "kind": "paraphrase",
+  "query": "Raj Kumar Bohra's bail and surety bonds accepted and tagged to the main file",
+  "gold": [
+   43
+  ],
+  "source_passage_id": 16,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A16-v",
+  "kind": "vague",
+  "query": "October 2020 Bohra bail bonds furnished",
+  "gold": [
+   43
+  ],
+  "source_passage_id": 16,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A17-q",
+  "kind": "quote",
+  "query": "per District Judge's order of 02.01.2021, adjourned due to coronavirus",
+  "gold": [
+   44
+  ],
+  "source_passage_id": 17,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A17-p",
+  "kind": "paraphrase",
+  "query": "hearing postponed by one day because of covid, following the district judge's circular",
+  "gold": [
+   44
+  ],
+  "source_passage_id": 17,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A17-v",
+  "kind": "vague",
+  "query": "January 2021 covid adjournment, no one present",
+  "gold": [
+   44
+  ],
+  "source_passage_id": 17,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A18-q",
+  "kind": "quote",
+  "query": "Surender's counsel unable to tell anything, seeks adjournment, senior counsel unavailable",
+  "gold": [
+   46
+  ],
+  "source_passage_id": 18,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A18-p",
+  "kind": "paraphrase",
+  "query": "Surender's junior lawyer knew nothing about the case and asked for more time",
+  "gold": [
+   46
+  ],
+  "source_passage_id": 18,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A18-v",
+  "kind": "vague",
+  "query": "January 2021 Surender hospital treatment record not filed",
+  "gold": [
+   45,
+   46,
+   47,
+   48
+  ],
+  "source_passage_id": 18,
+  "weak": false,
+  "note": "Surender medical-record saga 15-21 Jan 2021"
+ },
+ {
+  "qid": "A19-q",
+  "kind": "quote",
+  "query": "Virat Hospital staff said doctor would bring full record next date",
+  "gold": [
+   47
+  ],
+  "source_passage_id": 19,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A19-p",
+  "kind": "paraphrase",
+  "query": "hospital sent a nurse with ICU charts because the doctor couldn't join by video",
+  "gold": [
+   47
+  ],
+  "source_passage_id": 19,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A19-v",
+  "kind": "vague",
+  "query": "January 2021 doctor couldn't connect on video about Surender's condition",
+  "gold": [
+   47
+  ],
+  "source_passage_id": 19,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A20-q",
+  "kind": "quote",
+  "query": "Vijay Jhindal to be produced through VC from hospital if available",
+  "gold": [
+   53
+  ],
+  "source_passage_id": 20,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A20-p",
+  "kind": "paraphrase",
+  "query": "Jhindal admitted in Gurugram government hospital, court wants him shown on video from there",
+  "gold": [
+   53
+  ],
+  "source_passage_id": 20,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A20-v",
+  "kind": "vague",
+  "query": "spring 2021 Jhindal in hospital not produced",
+  "gold": [
+   53,
+   54
+  ],
+  "source_passage_id": 20,
+  "weak": false,
+  "note": "sl54 calls CMO report on him"
+ },
+ {
+  "qid": "A21-q",
+  "kind": "quote",
+  "query": "accused could not be produced since on police remand in FIR 218/2019",
+  "gold": [
+   54
+  ],
+  "source_passage_id": 21,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A21-p",
+  "kind": "paraphrase",
+  "query": "prisoners not brought because Rajasthan police had them on remand in another FIR",
+  "gold": [
+   54,
+   123
+  ],
+  "source_passage_id": 21,
+  "weak": false,
+  "note": "sl123 same situation (police remand in other case)"
+ },
+ {
+  "qid": "A21-v",
+  "kind": "vague",
+  "query": "April 2021 accused on police remand in Jaipur, not produced",
+  "gold": [
+   54
+  ],
+  "source_passage_id": 21,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A22-q",
+  "kind": "quote",
+  "query": "Vaibhav, Rohit Modi, Bharat Modi in custody; Virender, Rahul, Mukesh not produced",
+  "gold": [
+   55
+  ],
+  "source_passage_id": 22,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A22-p",
+  "kind": "paraphrase",
+  "query": "jail claimed Virender Modi was on interim bail though this court never granted it",
+  "gold": [
+   55
+  ],
+  "source_passage_id": 22,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A22-v",
+  "kind": "vague",
+  "query": "April 2021 new court receives case, Jaipur prisoners produced",
+  "gold": [
+   55
+  ],
+  "source_passage_id": 22,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A23-q",
+  "kind": "quote",
+  "query": "long date given because of heavy pendency of oldest cases",
+  "gold": [
+   57
+  ],
+  "source_passage_id": 23,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A23-p",
+  "kind": "paraphrase",
+  "query": "case put off for months because the new judge had a backlog of older cases",
+  "gold": [
+   57
+  ],
+  "source_passage_id": 23,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A23-v",
+  "kind": "vague",
+  "query": "May 2021 long adjournment court backlog",
+  "gold": [
+   57
+  ],
+  "source_passage_id": 23,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A24-q",
+  "kind": "quote",
+  "query": "apex court granted interim bail without specifying any time therein",
+  "gold": [
+   60,
+   74
+  ],
+  "source_passage_id": 24,
+  "weak": false,
+  "note": "sl74 identical reasoning for Surender Singh"
+ },
+ {
+  "qid": "A24-p",
+  "kind": "paraphrase",
+  "query": "Raj Kumar Modi let out after top court's open-ended interim bail, wife stood surety",
+  "gold": [
+   60
+  ],
+  "source_passage_id": 24,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A24-v",
+  "kind": "vague",
+  "query": "August 2021 Raj Kumar Modi interim bail supreme court",
+  "gold": [
+   60
+  ],
+  "source_passage_id": 24,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A25-q",
+  "kind": "quote",
+  "query": "put up on 08.09.2021, the date already fixed, Phalit Sharma",
+  "gold": [
+   61
+  ],
+  "source_passage_id": 25,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A25-p",
+  "kind": "paraphrase",
+  "query": "no one turned up for the complainant so case left for the already fixed day",
+  "gold": [
+   61
+  ],
+  "source_passage_id": 25,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A25-v",
+  "kind": "vague",
+  "query": "early Sept 2021 nobody appeared for SFIO",
+  "gold": [
+   61
+  ],
+  "source_passage_id": 25,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A26-q",
+  "kind": "quote",
+  "query": "prosecution filed reply to Rajeev Rana's application for cancelling non-bailable warrant",
+  "gold": [
+   68
+  ],
+  "source_passage_id": 26,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A26-p",
+  "kind": "paraphrase",
+  "query": "SFIO answered Rana's request to scrap his arrest warrant and skip attending",
+  "gold": [
+   68
+  ],
+  "source_passage_id": 26,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A26-v",
+  "kind": "vague",
+  "query": "Sept 2021 Rajeev Kumar Rana arrest warrant cancellation plea",
+  "gold": [
+   68,
+   71,
+   72
+  ],
+  "source_passage_id": 26,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A27-q",
+  "kind": "quote",
+  "query": "DRI permission for enquiries from Jainam Jain under section 108 Customs Act",
+  "gold": [
+   69
+  ],
+  "source_passage_id": 27,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A27-p",
+  "kind": "paraphrase",
+  "query": "customs intelligence officers allowed to question Jainam Rathod inside Bhondsi jail",
+  "gold": [
+   69
+  ],
+  "source_passage_id": 27,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A27-v",
+  "kind": "vague",
+  "query": "Sept 2021 revenue intelligence wants to question Jainam in jail",
+  "gold": [
+   63,
+   66,
+   69
+  ],
+  "source_passage_id": 27,
+  "weak": false,
+  "note": "63/66 adjourn the DRI application"
+ },
+ {
+  "qid": "A28-q",
+  "kind": "quote",
+  "query": "arguments heard on Rajeev Kumar Rana application to cancel non bailable warrant",
+  "gold": [
+   71,
+   72
+  ],
+  "source_passage_id": 28,
+  "weak": false,
+  "note": "72 is the detailed order on same application"
+ },
+ {
+  "qid": "A28-p",
+  "kind": "paraphrase",
+  "query": "Rana's bid to get his arrest warrant cancelled was thrown out",
+  "gold": [
+   71,
+   72
+  ],
+  "source_passage_id": 28,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A28-v",
+  "kind": "vague",
+  "query": "late Sept 2021 Rana warrant plea dismissed",
+  "gold": [
+   71,
+   72
+  ],
+  "source_passage_id": 28,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A29-q",
+  "kind": "quote",
+  "query": "SFIO counsel submitted even section 437 CrPC contemplates such a situation",
+  "gold": [
+   72
+  ],
+  "source_passage_id": 29,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A29-p",
+  "kind": "paraphrase",
+  "query": "judge held the special fraud law's strict bail rule overrides normal criminal procedure for Rana",
+  "gold": [
+   72
+  ],
+  "source_passage_id": 29,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A29-v",
+  "kind": "vague",
+  "query": "Sept 2021 long ruling companies act section 212 bail Rana",
+  "gold": [
+   72
+  ],
+  "source_passage_id": 29,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A30-q",
+  "kind": "quote",
+  "query": "list matter with SLP 618/2020, 6456/2020 and 140/2020 batch",
+  "gold": [
+   74
+  ],
+  "source_passage_id": 30,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A30-p",
+  "kind": "paraphrase",
+  "query": "Surender Singh freed on Supreme Court interim bail after depositing his passport there",
+  "gold": [
+   74
+  ],
+  "source_passage_id": 30,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A30-v",
+  "kind": "vague",
+  "query": "end of October 2021 Surender interim bail supreme court",
+  "gold": [
+   74
+  ],
+  "source_passage_id": 30,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A31-q",
+  "kind": "quote",
+  "query": "application by Priyanka Modi for furnishing bail bond and surety bond taken up",
+  "gold": [
+   76
+  ],
+  "source_passage_id": 31,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A31-p",
+  "kind": "paraphrase",
+  "query": "Priyanka Modi released after Supreme Court bail; surety's fixed deposit frozen",
+  "gold": [
+   76
+  ],
+  "source_passage_id": 31,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A31-v",
+  "kind": "vague",
+  "query": "February 2022 Priyanka Modi released on bail",
+  "gold": [
+   76
+  ],
+  "source_passage_id": 31,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A32-q",
+  "kind": "quote",
+  "query": "warrants of arrest issued against 24 accused without any fruitful result",
+  "gold": [
+   77
+  ],
+  "source_passage_id": 32,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A32-p",
+  "kind": "paraphrase",
+  "query": "judge started absconder proceedings since repeated arrest warrants never got the accused to court",
+  "gold": [
+   77
+  ],
+  "source_passage_id": 32,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A32-v",
+  "kind": "vague",
+  "query": "March 2022 big order proclamation against accused evading arrest",
+  "gold": [
+   77
+  ],
+  "source_passage_id": 32,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A33-q",
+  "kind": "quote",
+  "query": "personal bonds of Jainam Rathod accepted, attested at the jail gate",
+  "gold": [
+   79
+  ],
+  "source_passage_id": 33,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A33-p",
+  "kind": "paraphrase",
+  "query": "stand-in judge released Jainam Rathod after Supreme Court bail, surety's deposit protected",
+  "gold": [
+   79
+  ],
+  "source_passage_id": 33,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A33-v",
+  "kind": "vague",
+  "query": "April 2022 Jainam Rathod bail bonds supreme court",
+  "gold": [
+   79
+  ],
+  "source_passage_id": 33,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A34-q",
+  "kind": "quote",
+  "query": "case fixed for statement of executing constable about proclamation against accused",
+  "gold": [
+   81,
+   84,
+   85,
+   86,
+   118
+  ],
+  "source_passage_id": 34,
+  "weak": false,
+  "note": "same purpose line in 84/85/86 (Akshat Singh) and 118"
+ },
+ {
+  "qid": "A34-p",
+  "kind": "paraphrase",
+  "query": "police officers testified they publicly posted absconding notices for around twenty accused",
+  "gold": [
+   81
+  ],
+  "source_passage_id": 34,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A34-v",
+  "kind": "vague",
+  "query": "May 2022 constables' statements on proclamation publication",
+  "gold": [
+   81,
+   84
+  ],
+  "source_passage_id": 34,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A35-q",
+  "kind": "quote",
+  "query": "report from Ahlmad of Phalit Sharma's court be called",
+  "gold": [
+   82
+  ],
+  "source_passage_id": 35,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A35-p",
+  "kind": "paraphrase",
+  "query": "court asked the previous judge's record clerk for a report on Akshat Singh's proclamation",
+  "gold": [
+   82
+  ],
+  "source_passage_id": 35,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A35-v",
+  "kind": "vague",
+  "query": "May 2022 Akshat Singh proclamation clerk report",
+  "gold": [
+   82,
+   83
+  ],
+  "source_passage_id": 35,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A36-q",
+  "kind": "quote",
+  "query": "to come up on 02.07.2022 for reply and consideration of application",
+  "gold": [
+   86
+  ],
+  "source_passage_id": 36,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A36-p",
+  "kind": "paraphrase",
+  "query": "Akshat Singh asked to drop or pause the absconder proceedings; prosecution to reply",
+  "gold": [
+   86,
+   87
+  ],
+  "source_passage_id": 36,
+  "weak": true,
+  "note": "87 records reply not filed on that application"
+ },
+ {
+  "qid": "A36-v",
+  "kind": "vague",
+  "query": "June 2022 Akshat Singh proclamation affixed, officer statement recorded",
+  "gold": [
+   86
+  ],
+  "source_passage_id": 36,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A37-q",
+  "kind": "quote",
+  "query": "come up on 30.08.2022 for appearance of Meenakshi Modi and Neha Ghemawat",
+  "gold": [
+   87
+  ],
+  "source_passage_id": 37,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A37-p",
+  "kind": "paraphrase",
+  "query": "two Modi women told to appear while their Rajasthan High Court case was still pending",
+  "gold": [
+   87
+  ],
+  "source_passage_id": 37,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A37-v",
+  "kind": "vague",
+  "query": "mid 2022 Meenakshi and Neha Modi appearance",
+  "gold": [
+   85,
+   87,
+   95
+  ],
+  "source_passage_id": 37,
+  "weak": false,
+  "note": "85: no NBW against them; 95: next date"
+ },
+ {
+  "qid": "A38-q",
+  "kind": "quote",
+  "query": "Virender Parshad ASJ Gurugram order dated 22.07.2022",
+  "gold": [
+   90
+  ],
+  "source_passage_id": 38,
+  "weak": true,
+  "note": "signature block"
+ },
+ {
+  "qid": "A38-p",
+  "kind": "paraphrase",
+  "query": "Naveen Kumar's bail bonds accepted after this court granted him bail",
+  "gold": [
+   90
+  ],
+  "source_passage_id": 38,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A38-v",
+  "kind": "vague",
+  "query": "July 2022 Naveen Kumar bail bonds attested",
+  "gold": [
+   90
+  ],
+  "source_passage_id": 38,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A39-q",
+  "kind": "quote",
+  "query": "prayed PO proceedings be adjourned for Siddharth Chauhan, High Court order",
+  "gold": [
+   92,
+   95,
+   98,
+   100,
+   102,
+   104,
+   111,
+   112,
+   117
+  ],
+  "source_passage_id": 39,
+  "weak": false,
+  "note": "grep 'PO proceeding may be adjourned' + 100 'adjourning the PO proceeding'"
+ },
+ {
+  "qid": "A39-p",
+  "kind": "paraphrase",
+  "query": "Chauhan's lawyer asked to hold off declaring him absconding while the High Court heard him",
+  "gold": [
+   92,
+   95,
+   98,
+   100,
+   102,
+   104,
+   111,
+   112,
+   117
+  ],
+  "source_passage_id": 39,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A39-v",
+  "kind": "vague",
+  "query": "mid 2022 Chauhan absconder proceedings put off for High Court",
+  "gold": [
+   92,
+   95
+  ],
+  "source_passage_id": 39,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A40-q",
+  "kind": "quote",
+  "query": "Sessions Judge, date of order 30.08.2022, Gurugram UID HR 0082",
+  "gold": [
+   93,
+   94,
+   95
+  ],
+  "source_passage_id": 40,
+  "weak": true,
+  "note": "signature block shared by all 30.08.2022 orders"
+ },
+ {
+  "qid": "A40-p",
+  "kind": "paraphrase",
+  "query": "Bohra allowed to go abroad again on one crore security, surety still standing",
+  "gold": [
+   67,
+   89,
+   94,
+   97,
+   120
+  ],
+  "source_passage_id": 40,
+  "weak": true,
+  "note": "all Bohra travel permissions on same terms"
+ },
+ {
+  "qid": "A40-v",
+  "kind": "vague",
+  "query": "end of August 2022 Bohra foreign travel allowed",
+  "gold": [
+   94
+  ],
+  "source_passage_id": 40,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A41-q",
+  "kind": "quote",
+  "query": "fresh application for permanent exemption of Neha Kataria filed today",
+  "gold": [
+   95,
+   98,
+   100
+  ],
+  "source_passage_id": 41,
+  "weak": false,
+  "note": "identical paragraph in 95/98/100"
+ },
+ {
+  "qid": "A41-p",
+  "kind": "paraphrase",
+  "query": "Neha Kataria applied to be excused from attending court altogether",
+  "gold": [
+   32,
+   95,
+   98,
+   100
+  ],
+  "source_passage_id": 41,
+  "weak": false,
+  "note": "32: original 2019 permanent exemption application"
+ },
+ {
+  "qid": "A41-v",
+  "kind": "vague",
+  "query": "late 2022 Neha Kataria permanent exemption request",
+  "gold": [
+   95,
+   98,
+   100
+  ],
+  "source_passage_id": 41,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A42-q",
+  "kind": "quote",
+  "query": "Virender Parshad date of order 9.12.2022 ASJ cum special judge",
+  "gold": [
+   99,
+   100
+  ],
+  "source_passage_id": 42,
+  "weak": true,
+  "note": "signature block, both 09.12.2022 orders"
+ },
+ {
+  "qid": "A42-p",
+  "kind": "paraphrase",
+  "query": "no coercive steps against Shiv Raj Sharma because his bail plea is pending here",
+  "gold": [
+   100
+  ],
+  "source_passage_id": 42,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A42-v",
+  "kind": "vague",
+  "query": "December 2022 exemptions for Priyanka Modi, Bohra, Megha Chauhan",
+  "gold": [
+   100
+  ],
+  "source_passage_id": 42,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A43-q",
+  "kind": "quote",
+  "query": "by this short order the case adjourned, date already fixed",
+  "gold": [
+   93,
+   96,
+   99,
+   101,
+   103,
+   110
+  ],
+  "source_passage_id": 43,
+  "weak": true,
+  "note": "grep 'checking and uploading of detailed order'"
+ },
+ {
+  "qid": "A43-p",
+  "kind": "paraphrase",
+  "query": "with 187 accused the full order needs time to upload, so a brief order adjourns",
+  "gold": [
+   93,
+   96,
+   99,
+   101,
+   103,
+   110
+  ],
+  "source_passage_id": 43,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A43-v",
+  "kind": "vague",
+  "query": "spring 2023 short adjournment order, detailed order uploading",
+  "gold": [
+   103,
+   110
+  ],
+  "source_passage_id": 43,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A44-q",
+  "kind": "quote",
+  "query": "downloaded copy of High Court order dated 12.04.2023 annexed with application",
+  "gold": [
+   105,
+   106,
+   107,
+   108
+  ],
+  "source_passage_id": 44,
+  "weak": false,
+  "note": "same template for four accused"
+ },
+ {
+  "qid": "A44-p",
+  "kind": "paraphrase",
+  "query": "Bharat Das Vaishnav freed on High Court bail, a vehicle given as surety",
+  "gold": [
+   105
+  ],
+  "source_passage_id": 44,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A44-v",
+  "kind": "vague",
+  "query": "May 2023 Bharat Das Vaishnav bail release Jaipur jail",
+  "gold": [
+   105
+  ],
+  "source_passage_id": 44,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A45-q",
+  "kind": "quote",
+  "query": "copy of April 2023 High Court order in CRM-M-34563-2022 annexed",
+  "gold": [
+   106
+  ],
+  "source_passage_id": 45,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A45-p",
+  "kind": "paraphrase",
+  "query": "Vaibhav Lodha released after the High Court allowed his bail petition",
+  "gold": [
+   106
+  ],
+  "source_passage_id": 45,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A45-v",
+  "kind": "vague",
+  "query": "May 2023 Vaibhav Lodha released on bail",
+  "gold": [
+   106
+  ],
+  "source_passage_id": 45,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A46-q",
+  "kind": "quote",
+  "query": "applicant accused present, statement recorded as per law",
+  "gold": [
+   109
+  ],
+  "source_passage_id": 46,
+  "weak": true,
+  "note": "generic sentence"
+ },
+ {
+  "qid": "A46-p",
+  "kind": "paraphrase",
+  "query": "Shashank Shekhar Singh Rathore allowed to turn state witness, statement kept sealed",
+  "gold": [
+   109
+  ],
+  "source_passage_id": 46,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A46-v",
+  "kind": "vague",
+  "query": "May 2023 Shashank Rathore approver statement",
+  "gold": [
+   109,
+   111
+  ],
+  "source_passage_id": 46,
+  "weak": true,
+  "note": "111 (30.05.2023) records statements recorded 22.05.2023"
+ },
+ {
+  "qid": "A47-q",
+  "kind": "quote",
+  "query": "come up for further orders and appearance of both accused, High Court pending",
+  "gold": [
+   111,
+   112,
+   117
+  ],
+  "source_passage_id": 47,
+  "weak": false,
+  "note": "same paragraph in 111/117"
+ },
+ {
+  "qid": "A47-p",
+  "kind": "paraphrase",
+  "query": "Meenakshi and Neha Modi got top court protection from arrest and promised to appear",
+  "gold": [
+   111,
+   112,
+   117
+  ],
+  "source_passage_id": 47,
+  "weak": false,
+  "note": "grep 'interim relief qua no coercive'"
+ },
+ {
+  "qid": "A47-v",
+  "kind": "vague",
+  "query": "late 2023 Modi women to appear after supreme court no coercive relief",
+  "gold": [
+   112
+  ],
+  "source_passage_id": 47,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A48-q",
+  "kind": "quote",
+  "query": "requisite bonds of accused no. 163 Megha Chauhan furnished, accepted and attested",
+  "gold": [
+   115
+  ],
+  "source_passage_id": 48,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A48-p",
+  "kind": "paraphrase",
+  "query": "Megha Chauhan and Indu Tak's surety bonds accepted; their passports to be returned",
+  "gold": [
+   115
+  ],
+  "source_passage_id": 48,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A48-v",
+  "kind": "vague",
+  "query": "Sept 2023 Megha Chauhan Indu Tak passports surety bonds",
+  "gold": [
+   113,
+   114,
+   115
+  ],
+  "source_passage_id": 48,
+  "weak": false,
+  "note": "113/114 passport-return corrections"
+ },
+ {
+  "qid": "A49-q",
+  "kind": "quote",
+  "query": "come up on 03.05.2024 for presence of Shinder Pal Singh",
+  "gold": [
+   118
+  ],
+  "source_passage_id": 49,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A49-p",
+  "kind": "paraphrase",
+  "query": "constable testified he published the absconding notice for Shinder Pal Singh",
+  "gold": [
+   118
+  ],
+  "source_passage_id": 49,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A49-v",
+  "kind": "vague",
+  "query": "April 2024 Shinder Pal Singh proclamation constable statement",
+  "gold": [
+   118
+  ],
+  "source_passage_id": 49,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A50-q",
+  "kind": "quote",
+  "query": "Abhay Shah 127 through Nitin Desodia advocate, company through Jainam Rathod",
+  "gold": [
+   119
+  ],
+  "source_passage_id": 50,
+  "weak": true,
+  "note": "roll-call fragment"
+ },
+ {
+  "qid": "A50-p",
+  "kind": "paraphrase",
+  "query": "Shinder Pal Singh declared absconding after failing to show up by 3pm",
+  "gold": [
+   119
+  ],
+  "source_passage_id": 50,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A50-v",
+  "kind": "vague",
+  "query": "May 2024 Shinder Pal Singh declared proclaimed person",
+  "gold": [
+   119
+  ],
+  "source_passage_id": 50,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A51-q",
+  "kind": "quote",
+  "query": "original FDR of 2 lakh released to applicant against proper receipt",
+  "gold": [
+   121
+  ],
+  "source_passage_id": 51,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A51-p",
+  "kind": "paraphrase",
+  "query": "Jainam Rathod handed his passport back and got his security deposit returned",
+  "gold": [
+   121
+  ],
+  "source_passage_id": 51,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A51-v",
+  "kind": "vague",
+  "query": "mid 2024 Jainam passport deposited, fixed deposit released",
+  "gold": [
+   121
+  ],
+  "source_passage_id": 51,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A52-q",
+  "kind": "quote",
+  "query": "in custody but not produced by jail, on police remand in other case",
+  "gold": [
+   123
+  ],
+  "source_passage_id": 52,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A52-p",
+  "kind": "paraphrase",
+  "query": "Mukesh Modi, Rahul Modi and Rana weren't brought because police had them for another case",
+  "gold": [
+   123
+  ],
+  "source_passage_id": 52,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A52-v",
+  "kind": "vague",
+  "query": "Sept 2024 accused not produced, police remand elsewhere",
+  "gold": [
+   123
+  ],
+  "source_passage_id": 52,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A53-q",
+  "kind": "quote",
+  "query": "application be checked and registered as IA, put up with main file",
+  "gold": [
+   125,
+   126
+  ],
+  "source_passage_id": 53,
+  "weak": true,
+  "note": "same wording in 125"
+ },
+ {
+  "qid": "A53-p",
+  "kind": "paraphrase",
+  "query": "SFIO asks to declare Chauhan absconding after the High Court threw out his petition",
+  "gold": [
+   126
+  ],
+  "source_passage_id": 53,
+  "weak": true,
+  "note": "based on order content"
+ },
+ {
+  "qid": "A53-v",
+  "kind": "vague",
+  "query": "January 2025 SFIO plea Chauhan proclaimed person",
+  "gold": [
+   126,
+   127
+  ],
+  "source_passage_id": 53,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A54-q",
+  "kind": "quote",
+  "query": "file taken up as I shall be on casual leave, Sunday",
+  "gold": [
+   129
+  ],
+  "source_passage_id": 54,
+  "weak": true,
+  "note": "only casual-leave order mentioning Sunday"
+ },
+ {
+  "qid": "A54-p",
+  "kind": "paraphrase",
+  "query": "judge away on a few days' leave, so hearing pushed by about a month",
+  "gold": [
+   75,
+   116,
+   129,
+   130,
+   131
+  ],
+  "source_passage_id": 54,
+  "weak": true,
+  "note": "all 'taken up as I shall be on casual leave' adjournments"
+ },
+ {
+  "qid": "A54-v",
+  "kind": "vague",
+  "query": "April 2025 judge on leave, adjourned",
+  "gold": [
+   129
+  ],
+  "source_passage_id": 54,
+  "weak": true,
+  "note": ""
+ },
+ {
+  "qid": "A55-q",
+  "kind": "quote",
+  "query": "if no response received, court will report to High Court for contempt",
+  "gold": [
+   132
+  ],
+  "source_passage_id": 55,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A55-p",
+  "kind": "paraphrase",
+  "query": "judge warned Rajasthan jail officials could face contempt for freeing an accused unlawfully",
+  "gold": [
+   132
+  ],
+  "source_passage_id": 55,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A55-v",
+  "kind": "vague",
+  "query": "Sept 2025 Jodhpur jail superintendent report home secretary",
+  "gold": [
+   132,
+   133
+  ],
+  "source_passage_id": 55,
+  "weak": false,
+  "note": "grep 'Home Secretary'"
+ },
+ {
+  "qid": "A56-q",
+  "kind": "quote",
+  "query": "reply to Jainam Rathod application seeking permanent exemption filed by SFIO",
+  "gold": [
+   134
+  ],
+  "source_passage_id": 56,
+  "weak": false,
+  "note": "132/133 say reply NOT filed"
+ },
+ {
+  "qid": "A56-p",
+  "kind": "paraphrase",
+  "query": "SFIO finally answered Jainam Rathod's request to be excused from attending for good",
+  "gold": [
+   134
+  ],
+  "source_passage_id": 56,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A56-v",
+  "kind": "vague",
+  "query": "January 2026 Jainam Rathod permanent exemption reply",
+  "gold": [
+   134
+  ],
+  "source_passage_id": 56,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A57-q",
+  "kind": "quote",
+  "query": "Ahlmad reported he has not surrendered despite the said order",
+  "gold": [
+   137
+  ],
+  "source_passage_id": 57,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A57-p",
+  "kind": "paraphrase",
+  "query": "Chauhan ignored the Supreme Court's last deadline to surrender, so arrest warrant issued",
+  "gold": [
+   137
+  ],
+  "source_passage_id": 57,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A57-v",
+  "kind": "vague",
+  "query": "Feb 2026 Chauhan didn't surrender by supreme court deadline",
+  "gold": [
+   137
+  ],
+  "source_passage_id": 57,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A58-q",
+  "kind": "quote",
+  "query": "bring on record amended title showing persons granted pardon as prosecution witness",
+  "gold": [
+   124,
+   127,
+   128,
+   132,
+   133,
+   134,
+   139
+  ],
+  "source_passage_id": 58,
+  "weak": false,
+  "note": "grep 'amended title'"
+ },
+ {
+  "qid": "A58-p",
+  "kind": "paraphrase",
+  "query": "prosecutor told to fix the case title so pardoned accused appear as prosecution witnesses",
+  "gold": [
+   123,
+   124,
+   127,
+   128,
+   132,
+   133,
+   134,
+   139
+  ],
+  "source_passage_id": 58,
+  "weak": false,
+  "note": "123 originates the direction (list of witnesses)"
+ },
+ {
+  "qid": "A58-v",
+  "kind": "vague",
+  "query": "early 2026 amended title approvers as witnesses",
+  "gold": [
+   134,
+   139
+  ],
+  "source_passage_id": 58,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A59-q",
+  "kind": "quote",
+  "query": "Supreme Court gave time to surrender till 20.02.2026, failing which law enforcement acts",
+  "gold": [
+   137,
+   141
+  ],
+  "source_passage_id": 59,
+  "weak": false,
+  "note": "137 reproduces same SC order"
+ },
+ {
+  "qid": "A59-p",
+  "kind": "paraphrase",
+  "query": "Chauhan finally declared an absconding offender after ignoring the Supreme Court's surrender deadline",
+  "gold": [
+   141
+  ],
+  "source_passage_id": 59,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A59-v",
+  "kind": "vague",
+  "query": "April 2026 Chauhan proclaimed offender",
+  "gold": [
+   141
+  ],
+  "source_passage_id": 59,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A60-q",
+  "kind": "quote",
+  "query": "personal appearance of accused 128, 130, 133 exempted for today only",
+  "gold": [
+   143
+  ],
+  "source_passage_id": 60,
+  "weak": false,
+  "note": "144/145 have different number lists"
+ },
+ {
+  "qid": "A60-p",
+  "kind": "paraphrase",
+  "query": "fifteen accused excused from attending just that one hearing",
+  "gold": [
+   143
+  ],
+  "source_passage_id": 60,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "A60-v",
+  "kind": "vague",
+  "query": "early July 2026 fifteen accused excused for the day",
+  "gold": [
+   143
+  ],
+  "source_passage_id": 60,
+  "weak": false,
+  "note": ""
+ },
+ {
+  "qid": "B01",
+  "kind": "name",
+  "query": "Rekha Modi",
+  "gold": [
+   17,
+   21,
+   35,
+   36,
+   60
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'Rekha Modi' (surety/wife of Raj Kumar Modi)"
+ },
+ {
+  "qid": "B02",
+  "kind": "name",
+  "query": "Ram Lal Arya approver statement",
+  "gold": [
+   45,
+   50,
+   52,
+   62,
+   70,
+   73,
+   77,
+   78,
+   123
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('Ram ?lal Arya|158','approver') minus roll-call-only 143-146; 52 per summary"
+ },
+ {
+  "qid": "B03",
+  "kind": "name",
+  "query": "Vinay Kumawat",
+  "gold": [
+   87,
+   92,
+   95,
+   98,
+   100,
+   102,
+   104,
+   111,
+   112,
+   117,
+   119
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'Kumawat' (all mentions)"
+ },
+ {
+  "qid": "B04",
+  "kind": "name",
+  "query": "Prashant Baliyan investigating officer",
+  "gold": [
+   1,
+   2,
+   7,
+   10,
+   11,
+   12,
+   13,
+   17,
+   23,
+   24,
+   25,
+   28,
+   32,
+   46,
+   47,
+   65,
+   67
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'Prashant Bal(iyan|yan)' all mentions"
+ },
+ {
+  "qid": "B05",
+  "kind": "name",
+  "query": "orders by judge Puneet Sehgal",
+  "gold": [
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "judge field + grep 'Sehgal'"
+ },
+ {
+  "qid": "B06",
+  "kind": "name",
+  "query": "Raj Kumar Bora travel abroad",
+  "gold": [
+   67,
+   87,
+   89,
+   94,
+   97,
+   120
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "misspelling of Bohra; travel-abroad applications (87 = application filed)"
+ },
+ {
+  "qid": "B07",
+  "kind": "name",
+  "query": "Megha Chohan passport",
+  "gold": [
+   87,
+   88,
+   113,
+   115,
+   125,
+   135
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "misspelling of Chauhan; passport release/return applications"
+ },
+ {
+  "qid": "B08",
+  "kind": "name",
+  "query": "Shiv Raj Sharama approver",
+  "gold": [
+   87,
+   92,
+   95,
+   98,
+   102,
+   104,
+   111,
+   112,
+   117,
+   119,
+   123,
+   124,
+   127,
+   128,
+   132,
+   133,
+   134,
+   139
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "misspelling; near('Shiv Raj|Shivraj|160','approver|pardon|306') minus roll-call 143-146"
+ },
+ {
+  "qid": "B09",
+  "kind": "name",
+  "query": "Akshat Singh proclamation",
+  "gold": [
+   77,
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('Akshat','proclamation|section 82'), read contexts"
+ },
+ {
+  "qid": "B10",
+  "kind": "name",
+  "query": "Paramvir Sangwan arrest warrant withdrawal",
+  "gold": [
+   20,
+   29,
+   30
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "Sangwan applications against warrant of arrest"
+ },
+ {
+  "qid": "B11",
+  "kind": "number",
+  "query": "A-177 warrant cancellation application",
+  "gold": [
+   68,
+   71,
+   72
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "Rajeev Kumar Rana NBW cancellation"
+ },
+ {
+  "qid": "B12",
+  "kind": "number",
+  "query": "accused 135 proclaimed offender proceedings",
+  "gold": [
+   77,
+   87,
+   92,
+   95,
+   98,
+   100,
+   102,
+   104,
+   111,
+   112,
+   117,
+   123,
+   124,
+   126,
+   127,
+   141
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('Chauhan|135','proclaim|PO proceeding'); excluded pure roll-call status lines (132,133,134,139,145,146)"
+ },
+ {
+  "qid": "B13",
+  "kind": "number",
+  "query": "A-149 supreme court protection",
+  "gold": [
+   17,
+   18,
+   19,
+   26,
+   35,
+   36,
+   38,
+   39,
+   45,
+   62
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "Vijay Shukla SC writ/protection dealt with; later 'interim protection continuing' status lines excluded"
+ },
+ {
+  "qid": "B14",
+  "kind": "number",
+  "query": "accused no 181 permanent exemption",
+  "gold": [
+   32,
+   36,
+   38,
+   39,
+   51,
+   95,
+   98,
+   100,
+   104,
+   111
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "Neha Kataria permanent exemption applications/marking presence; later 'exempted permanently' roll-call lines excluded"
+ },
+ {
+  "qid": "B15",
+  "kind": "number",
+  "query": "A-113 A-114 proclamation",
+  "gold": [
+   146,
+   147,
+   148,
+   149
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "Mukesh & Rahul Modi proclamation 2026"
+ },
+ {
+  "qid": "B16",
+  "kind": "concept",
+  "query": "accused asking permission to go overseas",
+  "gold": [
+   67,
+   89,
+   94,
+   97,
+   113,
+   114,
+   120,
+   125,
+   135,
+   136,
+   138,
+   140
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'travel abroad|visa|Vietnam|South Korea' ; orders on travel/passport-for-visa applications"
+ },
+ {
+  "qid": "B17",
+  "kind": "concept",
+  "query": "case closed against accused who passed away",
+  "gold": [
+   50,
+   58,
+   62,
+   77,
+   87,
+   102,
+   104,
+   111,
+   112,
+   117,
+   119,
+   122,
+   123,
+   124
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'death report|abat|abet|expired'; excluded orders only restating 'stood abated'"
+ },
+ {
+  "qid": "B18",
+  "kind": "concept",
+  "query": "accused said he was in hospital so couldn't come",
+  "gold": [
+   4,
+   42,
+   45,
+   46,
+   47,
+   48,
+   49,
+   53,
+   54,
+   62,
+   127
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'hospital|AIIMS|treatment' on accused"
+ },
+ {
+  "qid": "B19",
+  "kind": "concept",
+  "query": "court accepted accused as state witness in exchange for pardon",
+  "gold": [
+   78,
+   81,
+   109,
+   123,
+   139
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "approver allowed / statement recorded / pardon->witness; grep 'approver|pardon|306'"
+ },
+ {
+  "qid": "B20",
+  "kind": "concept",
+  "query": "released because the top court granted bail",
+  "gold": [
+   60,
+   74,
+   76,
+   79
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "SC bail orders implemented (bonds furnished)"
+ },
+ {
+  "qid": "B21",
+  "kind": "concept",
+  "query": "let out after the High Court allowed bail, bonds accepted",
+  "gold": [
+   36,
+   104,
+   105,
+   106,
+   107,
+   108,
+   111
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('bonds furnished/accepted','High Court')"
+ },
+ {
+  "qid": "B22",
+  "kind": "concept",
+  "query": "jail or police not bringing prisoners to court, asked to explain",
+  "gold": [
+   8,
+   9,
+   10,
+   12,
+   14,
+   17,
+   21,
+   53,
+   54,
+   55
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('explanation|show cause','not produced|non-production')"
+ },
+ {
+  "qid": "B23",
+  "kind": "concept",
+  "query": "Jodhpur jail freed Mukesh Modi without this court's bail order",
+  "gold": [
+   127,
+   128,
+   132,
+   133,
+   134
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "near('released','Jodhpur') + reading"
+ },
+ {
+  "qid": "B24",
+  "kind": "concept",
+  "query": "accused formally declared absconding",
+  "gold": [
+   92,
+   119,
+   141
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "actual declarations: 'hereby declare', 'is declared proclaimed'"
+ },
+ {
+  "qid": "B25",
+  "kind": "concept",
+  "query": "trying absent accused separately from the rest",
+  "gold": [
+   58,
+   134,
+   141
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'separate trial|segregat'"
+ },
+ {
+  "qid": "B26",
+  "kind": "concept",
+  "query": "giving accused the case papers on a USB or digital copy",
+  "gold": [
+   2,
+   4,
+   12,
+   36,
+   38,
+   39,
+   145
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'soft copy|pen ?drive' (7 is complaint annex only)"
+ },
+ {
+  "qid": "B27",
+  "kind": "concept",
+  "query": "judge on leave or vacation so hearing adjourned or taken by another judge",
+  "gold": [
+   8,
+   9,
+   31,
+   73,
+   75,
+   116,
+   129,
+   130,
+   131,
+   142
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'casual leave|vacation'"
+ },
+ {
+  "qid": "B28",
+  "kind": "concept",
+  "query": "video link to jail not working so prisoners not shown",
+  "gold": [
+   45,
+   46,
+   49,
+   62,
+   98,
+   100,
+   102
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'not connected|technical error|technical issue'"
+ },
+ {
+  "qid": "B29",
+  "kind": "concept",
+  "query": "Supreme Court told trial court to frame charges",
+  "gold": [
+   145
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'frame' -> only 145"
+ },
+ {
+  "qid": "B30",
+  "kind": "concept",
+  "query": "court fixing a mistake in its own earlier order",
+  "gold": [
+   17,
+   24,
+   38,
+   39,
+   49,
+   59,
+   113,
+   114,
+   123
+  ],
+  "source_passage_id": null,
+  "weak": false,
+  "note": "grep 'clerical|typographical|inadvertent|corrected|correction' + reading"
+ }
+]

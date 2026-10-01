@@ -1,0 +1,704 @@
+[
+ {
+  "qid": "h01",
+  "kind": "nolex",
+  "query": "the prison handed the two brothers over to cops from another state without asking the judge first",
+  "gold": [
+   8,
+   9
+  ],
+  "note": "grep: SOG|without permission; Mukesh/Rahul Modi custody transferred to Rajasthan SOG; 8 show-cause, 9 jail explanation"
+ },
+ {
+  "qid": "h02",
+  "kind": "nolex",
+  "query": "the jailed man stuck on a breathing machine whose physician had to dial in and explain how ill he was",
+  "gold": [
+   45,
+   46,
+   47,
+   48
+  ],
+  "note": "grep: BiPAP|pulmonary|Virat (hospital); Surender Singh medical record/doctor summoned 45-48"
+ },
+ {
+  "qid": "h03",
+  "kind": "nolex",
+  "query": "a court staffer accused of hiding or throwing away the public notice he was supposed to put up",
+  "gold": [
+   83
+  ],
+  "note": "grep: Naib Court, played dirty, withholding or destroying notice (Akshat Singh proclamation)"
+ },
+ {
+  "qid": "h04",
+  "kind": "nolex",
+  "query": "a mum wanted her own ID booklet handed over for a bit so her little one's could be redone",
+  "gold": [
+   87,
+   88
+  ],
+  "note": "grep: minor child.*passport; Megha Chauhan application filed (87) and allowed (88)"
+ },
+ {
+  "qid": "h05",
+  "kind": "nolex",
+  "query": "his wife promised the judge he would show up within a few days so they shouldn't brand him a runaway",
+  "gold": [
+   92
+  ],
+  "note": "grep: within a period of one week; Peeyush Aggarwal's wife undertaking, proclamation deferred"
+ },
+ {
+  "qid": "h06",
+  "kind": "nolex",
+  "query": "tax investigators chasing dodged import charges wanted to interview someone locked up in prison",
+  "gold": [
+   63,
+   66,
+   69
+  ],
+  "note": "grep: Customs|DRI|Revenue Intelligence; DRI application re Jainam Rathod: 63/66 adjournments for arguments, 69 allowed"
+ },
+ {
+  "qid": "h07",
+  "kind": "nolex",
+  "query": "fixing a mix-up where the wrong firms and people got listed in parts of the very first big order",
+  "gold": [
+   24
+  ],
+  "note": "grep: clerical error; correction of para 9 of summoning order 03.06.2019"
+ },
+ {
+  "qid": "h08",
+  "kind": "nolex",
+  "query": "did the people accused get all the papers on a USB stick rather than photocopies",
+  "gold": [
+   2,
+   4,
+   12,
+   36,
+   38,
+   39,
+   145
+  ],
+  "note": "grep: soft copy|pen ?drive (excluded 7 = complaint's own annexure)"
+ },
+ {
+  "qid": "h09",
+  "kind": "nolex",
+  "query": "the prisoners couldn't be shown on screen because the internet hookup kept failing",
+  "gold": [
+   42,
+   45,
+   46,
+   49,
+   62,
+   98,
+   100,
+   102
+  ],
+  "note": "grep: V.C is not (connected|functioning)|VC not properly working|technical issue/error"
+ },
+ {
+  "qid": "h10",
+  "kind": "nolex",
+  "query": "a lender was told not to cash in the savings certificate pledged by the person standing guarantee",
+  "gold": [
+   76,
+   79
+  ],
+  "note": "grep: encash; FDR not to be encashed without court order (Priyanka Modi SBI Jodhpur; Jainam Rathod Bank of India)"
+ },
+ {
+  "qid": "h11",
+  "kind": "nolex",
+  "query": "someone pledged a car as the guarantee so a relative could walk out of jail",
+  "gold": [
+   105,
+   106,
+   107,
+   108
+  ],
+  "note": "grep: vehicle .* furnished as surety; four release orders 19.05.2023"
+ },
+ {
+  "qid": "h12",
+  "kind": "nolex",
+  "query": "the court was shut for a town-wide day off so that hearing got pushed",
+  "gold": [
+   37
+  ],
+  "note": "grep: local holiday (11.11.2019)"
+ },
+ {
+  "qid": "h13",
+  "kind": "nolex",
+  "query": "a lawyer skipped putting his signature on the roll so two women had to ask to be counted as there",
+  "gold": [
+   51
+  ],
+  "note": "grep: forgot to sign the attendance sheet (A-180, A-181)"
+ },
+ {
+  "qid": "h14",
+  "kind": "nolex",
+  "query": "the person who just vouched for who the guarantor was also got a warning letter when the accused vanished",
+  "gold": [
+   17,
+   35,
+   36
+  ],
+  "note": "grep: identifier; s.446 notice to surety and identifier (Rajesh Ranjan, identifier)"
+ },
+ {
+  "qid": "h15",
+  "kind": "nolex",
+  "query": "why was the next date set so many months out - the newly set up court was swamped with older matters",
+  "gold": [
+   57
+  ],
+  "note": "grep: pendency; long date given due to heavy pendency of oldest cases"
+ },
+ {
+  "qid": "h16",
+  "kind": "nolex",
+  "query": "the short notes saying the full write-up would go online later because there were way too many people and lawyers",
+  "gold": [
+   93,
+   96,
+   99,
+   101,
+   103,
+   110
+  ],
+  "note": "grep: checking and uploading of detailed order"
+ },
+ {
+  "qid": "h17",
+  "kind": "nolex",
+  "query": "can she fly to Seoul",
+  "gold": [
+   125
+  ],
+  "note": "grep: South Korea|Korea (Megha Chauhan IA 4-2024)"
+ },
+ {
+  "qid": "h18",
+  "kind": "nolex",
+  "query": "getting her ID booklet handed back so she could apply to go to America",
+  "gold": [
+   135,
+   136,
+   138,
+   140
+  ],
+  "note": "grep: visa; US visa passport applications of Megha Chauhan/Indu Tak (135,136), Indu Tak's withdrawn (138), referenced in 140"
+ },
+ {
+  "qid": "h19",
+  "kind": "nolex",
+  "query": "an old man in his seventies with health troubles, scared of getting sick, asked to be let off from coming in person",
+  "gold": [
+   50
+  ],
+  "note": "grep: 74 years of age|old age (Paramvir Singh Sangwan)"
+ },
+ {
+  "qid": "h20",
+  "kind": "nolex",
+  "query": "the prison claimed he was out on temporary release though this judge had not let him out",
+  "gold": [
+   55
+  ],
+  "note": "grep: interim bail till 17.04.2021 (Virender Modi); court granted no such bail"
+ },
+ {
+  "qid": "h21",
+  "kind": "nolex",
+  "query": "the notice was shouted out in the bazaar and pasted up by the entrance of their old home",
+  "gold": [
+   149
+  ],
+  "note": "grep: boundary wall|main market (Mukesh/Rahul Modi proclamation at Sirohi)"
+ },
+ {
+  "qid": "h22",
+  "kind": "nolex",
+  "query": "the prisoner couldn't be brought in because there weren't enough guards to accompany him",
+  "gold": [
+   10,
+   12,
+   21,
+   55
+  ],
+  "note": "grep: want of escort|requisite escort party|sufficient police force|provide necessary police force"
+ },
+ {
+  "qid": "h23",
+  "kind": "nolex",
+  "query": "the top court let him out because the company borrowed the money years before he joined it",
+  "gold": [
+   74
+  ],
+  "note": "grep: loan predated directorship (Surender Singh SC interim bail)"
+ },
+ {
+  "qid": "h24",
+  "kind": "nolex",
+  "query": "six people allowed to go overseas again after the agency admitted it had pretty much nothing on them",
+  "gold": [
+   22
+  ],
+  "note": "grep: surrender passports relaxed; SFIO conceded no evidence against six"
+ },
+ {
+  "qid": "h25",
+  "kind": "nolex",
+  "query": "the clerk hadn't organised the case papers so the judge couldn't figure out where each person stood",
+  "gold": [
+   144
+  ],
+  "note": "grep: not been tagged properly by the Ahlmad"
+ },
+ {
+  "qid": "h26",
+  "kind": "misname",
+  "query": "Prashant Balian",
+  "gold": [
+   1,
+   2,
+   7,
+   10,
+   11,
+   12,
+   13,
+   17,
+   23,
+   24,
+   25,
+   28,
+   32,
+   46,
+   47,
+   65,
+   67
+  ],
+  "note": "grep: Baliyan|Balyan (SFIO Deputy Director / IO)"
+ },
+ {
+  "qid": "h27",
+  "kind": "misname",
+  "query": "Bheem Singh Motsra",
+  "gold": [
+   43,
+   67,
+   88,
+   89,
+   105,
+   106,
+   107,
+   108,
+   112,
+   113,
+   114,
+   115,
+   117,
+   125,
+   140
+  ],
+  "note": "grep: Bhim Singh|B.S. ?Motsara (excluded Pankaj Motsara orders 12,17,28,35-40)"
+ },
+ {
+  "qid": "h28",
+  "kind": "misname",
+  "query": "Dr Veeratvir Yadav",
+  "gold": [
+   46,
+   47,
+   48
+  ],
+  "note": "grep: Viratveer|Virender Yadav|doctor (47 treating doctor of Virat Hospital)"
+ },
+ {
+  "qid": "h29",
+  "kind": "misname",
+  "query": "Shailender Bhadoria",
+  "gold": [
+   66,
+   69
+  ],
+  "note": "grep: Bhadauria (DRI Senior Special PP)"
+ },
+ {
+  "qid": "h30",
+  "kind": "misname",
+  "query": "Aakash Jangda",
+  "gold": [
+   16,
+   35,
+   36,
+   38,
+   39,
+   68,
+   71,
+   72
+  ],
+  "note": "grep: Jangra (Akash Singh / Aakash Jangra, advocate)"
+ },
+ {
+  "qid": "h31",
+  "kind": "misname",
+  "query": "Yashvinder Pal Singh judge",
+  "gold": [
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149
+  ],
+  "note": "grep: Yashwinder (judge)"
+ },
+ {
+  "qid": "h32",
+  "kind": "misname",
+  "query": "Jagdip Singh judge",
+  "gold": [
+   121,
+   122,
+   123,
+   124,
+   125,
+   126,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   143
+  ],
+  "note": "grep: Jagdeep (judge; 143 refers to his order)"
+ },
+ {
+  "qid": "h33",
+  "kind": "misname",
+  "query": "Puneet Saigal",
+  "gold": [
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141
+  ],
+  "note": "grep: Sehgal (judge)"
+ },
+ {
+  "qid": "h34",
+  "kind": "misname",
+  "query": "M.M. Dhonchhak",
+  "gold": [
+   32,
+   33,
+   34
+  ],
+  "note": "grep: Dhonchak (judge)"
+ },
+ {
+  "qid": "h35",
+  "kind": "misname",
+  "query": "Gaj Raj constable",
+  "gold": [
+   81,
+   84,
+   85,
+   86
+  ],
+  "note": "grep: Gajraj (EHC executing official)"
+ },
+ {
+  "qid": "h36",
+  "kind": "misname",
+  "query": "Abhimanyu Dhavan",
+  "gold": [
+   90,
+   91,
+   92
+  ],
+  "note": "grep: Abhimanyu|Dhawan (advocate for Naveen Kumar)"
+ },
+ {
+  "qid": "h37",
+  "kind": "misname",
+  "query": "Karan Gogana",
+  "gold": [
+   36,
+   38,
+   39,
+   81,
+   123,
+   124,
+   127,
+   128
+  ],
+  "note": "grep: Gogna (advocate)"
+ },
+ {
+  "qid": "h38",
+  "kind": "misname",
+  "query": "Rekha Modhi surety",
+  "gold": [
+   17,
+   21,
+   35,
+   36,
+   60
+  ],
+  "note": "grep: Rekha (surety, wife of Raj Kumar Modi)"
+ },
+ {
+  "qid": "h39",
+  "kind": "misname",
+  "query": "Sunita Sainy",
+  "gold": [
+   50,
+   87,
+   91,
+   92,
+   95,
+   98,
+   100,
+   102,
+   104,
+   111,
+   112
+  ],
+  "note": "grep: Sunita (Saini, advocate)"
+ },
+ {
+  "qid": "h40",
+  "kind": "misname",
+  "query": "Jasbeer Singh judge",
+  "gold": [
+   79,
+   112,
+   113,
+   114,
+   115,
+   116
+  ],
+  "note": "grep: Jasbir (link/ASJ)"
+ },
+ {
+  "qid": "h41",
+  "kind": "when",
+  "query": "what happened in the case during the 2020 lockdown",
+  "gold": [
+   41,
+   42
+  ],
+  "note": "window 2020; grep COVID|coronavirus -> 41,42 (44 is Jan 2021)"
+ },
+ {
+  "qid": "h42",
+  "kind": "when",
+  "query": "the order right after the Supreme Court review in July 2026 telling the trial court to get on with charges",
+  "gold": [
+   145
+  ],
+  "note": "window Jul-Aug 2026; grep Review Petition|frame the charges -> 145"
+ },
+ {
+  "qid": "h43",
+  "kind": "when",
+  "query": "the very first hearing in May 2019 when the agency filed its complaint",
+  "gold": [
+   1
+  ],
+  "note": "window May 2019 first; order 1 (18.05.2019)"
+ },
+ {
+  "qid": "h44",
+  "kind": "when",
+  "query": "the big June 2019 decision calling every accused to court",
+  "gold": [
+   6,
+   7
+  ],
+  "note": "window Jun 2019; operative summoning (6) and detailed cognizance order (7)"
+ },
+ {
+  "qid": "h45",
+  "kind": "when",
+  "query": "around September 2021 someone got permission to go overseas",
+  "gold": [
+   67
+  ],
+  "note": "window Sep 2021; grep abroad -> 67 (Raj Kumar Bohra)"
+ },
+ {
+  "qid": "h46",
+  "kind": "when",
+  "query": "spring 2026, who was finally declared a fugitive",
+  "gold": [
+   141
+  ],
+  "note": "window Mar-May 2026; Proclaimed Offender Sidharth Chauhan 17.04.2026"
+ },
+ {
+  "qid": "h47",
+  "kind": "when",
+  "query": "February 2022 a woman accused released after the top court stepped in",
+  "gold": [
+   76
+  ],
+  "note": "window Feb 2022; Priyanka Modi SC bail"
+ },
+ {
+  "qid": "h48",
+  "kind": "when",
+  "query": "May 2023 a batch of people let out of jail after the High Court gave bail",
+  "gold": [
+   105,
+   106,
+   107,
+   108
+  ],
+  "note": "window May 2023; release orders 19.05.2023"
+ },
+ {
+  "qid": "h49",
+  "kind": "when",
+  "query": "September 2019, the accused who had protection from the Supreme Court",
+  "gold": [
+   18,
+   19,
+   20,
+   26
+  ],
+  "note": "window Sep 2019; grep Vijay Shukla SC interim protection; 20 Sangwan HC protection in same terms"
+ },
+ {
+  "qid": "h50",
+  "kind": "when",
+  "query": "April 2022 when some accused gave statements and were allowed to turn approver",
+  "gold": [
+   78
+  ],
+  "note": "window Apr 2022; grep approver -> 78 (02.04.2022)"
+ },
+ {
+  "qid": "h51",
+  "kind": "ruling",
+  "query": "did the court ever refuse to excuse someone from appearing because his anticipatory bail had already been rejected",
+  "gold": [
+   32,
+   42,
+   45,
+   98
+  ],
+  "note": "contentions/grep: anticipatory bail .. dismissed .. exemption (Aditya Sarda 32, Vijay Jindal 42, Vijay Shukla 45, s.317 pleader app 98)"
+ },
+ {
+  "qid": "h52",
+  "kind": "ruling",
+  "query": "why wouldn't the judge immediately declare the runaway director a fugitive after his High Court case was withdrawn",
+  "gold": [
+   127,
+   128
+  ],
+  "note": "Sidharth Chauhan: court held at least 30 days must be given (abeyance publication 30.04.2022)"
+ },
+ {
+  "qid": "h53",
+  "kind": "ruling",
+  "query": "can someone who refuses to surrender still get his arrest warrant cancelled because he says he moved house years ago",
+  "gold": [
+   25
+  ],
+  "note": "Nitin Rathore application dismissed as not maintainable absent surrender"
+ },
+ {
+  "qid": "h54",
+  "kind": "ruling",
+  "query": "did the court accept that a man never arrested during the investigation couldn't be arrested now",
+  "gold": [
+   64,
+   65,
+   71,
+   72
+  ],
+  "note": "grep Aman Preet Singh|Siddharth v. State of U.P.; Sudhir Mehta (64/65) and Rajeev Kumar Rana (71/72) dismissed"
+ },
+ {
+  "qid": "h55",
+  "kind": "ruling",
+  "query": "did the court agree to split off the trial for the accused who couldn't be found",
+  "gold": [
+   58,
+   134,
+   141
+  ],
+  "note": "58 SFIO s.299/317 separate trial dismissed; 134/141 HC direction of 22.12.2025 to segregate trial acted on"
+ },
+ {
+  "qid": "h56",
+  "kind": "ruling",
+  "query": "once accused were pardoned for turning approver, did they still count as accused",
+  "gold": [
+   123,
+   124,
+   127,
+   128,
+   143
+  ],
+  "note": "123 held pardoned accused become witnesses; 124/127/128 amended title direction; 143 records it"
+ },
+ {
+  "qid": "h57",
+  "kind": "ruling",
+  "query": "what happened to the absconder proceedings once the accused got bail from the High Court",
+  "gold": [
+   104,
+   111
+  ],
+  "note": "grep: P.O. proceedings .. dropped"
+ },
+ {
+  "qid": "h58",
+  "kind": "ruling",
+  "query": "did the court hold off declaring someone an absconder while his bail plea was still pending",
+  "gold": [
+   77,
+   87,
+   92,
+   95,
+   98
+  ],
+  "note": "77 refused (no stay); 87/92/95/98 kept in abeyance/adjourned pending bail/HC"
+ },
+ {
+  "qid": "h59",
+  "kind": "ruling",
+  "query": "why was the woman's request to travel to Vietnam turned down",
+  "gold": [
+   140
+  ],
+  "note": "grep: Vietnam (Indu Tak)"
+ },
+ {
+  "qid": "h60",
+  "kind": "ruling",
+  "query": "could an accused just be represented by his lawyer instead of coming in person",
+  "gold": [
+   58,
+   98
+  ],
+  "note": "grep: 317 CrPC; 58 s.317 inapplicable at appearance stage; 98 pleader application dismissed"
+ }
+]

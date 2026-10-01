@@ -1,0 +1,88 @@
+# Search: which method, and why — evaluation on the actual corpus
+
+Date: 1 October 2026. Corpus: the 149 orders, full extracted text (1.15M characters), cut into
+1,978 overlapping chunks of 120 words, plus one chunk per order holding the curated summary.
+
+## The question
+
+The client suggested vector embeddings. The brief was to test that against the real corpus and
+build it only if it is genuinely the right answer.
+
+## How it was tested
+
+Two query sets, written by separate agents that never saw any search system or result. Gold
+answers were set by grepping the order texts, and a sample was checked by hand against the text.
+
+* **Realistic set — 210 queries.** 60 distinctive passages sampled at random (seeded) from 60
+  different orders, each turned into a *half-remembered quote*, a *plain-words paraphrase* and a
+  *vague "roughly when + what"* query; plus 30 name, accused-number and concept queries.
+* **Hard held-out set — 60 queries**, aimed at the cases where embeddings should win:
+  25 *no-shared-words* descriptions (e.g. "the jailed man stuck on a breathing machine" for an order
+  that says BiPAP), 15 *misspelled names only*, 10 *roughly when*, 10 *what did the court decide*.
+
+The synonym list was written from general criminal-procedure vocabulary **before** the held-out
+set existed, and was frozen before it was run. It was tuned on nothing.
+
+Metric: recall at 5 — is a correct order among the first five results.
+
+## Results
+
+| Recall in top 5 | Realistic (210) | Hard held-out (60) | of which no shared words (25) |
+|---|---:|---:|---:|
+| Current site filter (exact substring of summaries) | **0%** | 0% | 0% |
+| Keyword ranking (BM25) on full text + date awareness | 92% | 60% | 36% |
+| + spelling tolerance | 92% | 68% | 36% |
+| **+ legal synonyms — shipped** | **96%** | **72%** | 44% |
+| Embeddings alone (best of three small models) | 83% | 67% | 60% |
+| Hybrid, keyword + MiniLM, equal weight | 93% | **83%** | **64%** |
+| Hybrid, keyword + bge-small, embeddings at 0.4 weight | 96% | 75% | 48% |
+
+Models tried: all-MiniLM-L6-v2, bge-small-en-v1.5, snowflake-arctic-embed-xs (all small enough to
+run in a browser). Full per-category tables: `results_queries.json`, `results_holdout.json`.
+
+## What this shows
+
+1. **The current filter finds nothing** for any query a person would actually type: it needs the
+   exact characters of a summary. The new keyword search alone moves the realistic set from 0% to 96%.
+2. **Most real searches carry a name, a number or a remembered word**, and keyword search is
+   better at those than embeddings: exact-quote recall 98% vs 63–80% for embeddings alone.
+3. **Embeddings genuinely help in one situation** — the user remembers what happened but none of
+   the words. On those, an equal-weight hybrid finds about 5 more of 25 queries.
+4. **But that same blend costs exact-line recall** (quotes 98% → 90%). No single weighting wins
+   both sets: light weighting keeps the realistic set at 96% but the hard-set gain shrinks to +3 points.
+5. Misspelled names did **not** need embeddings: spelling tolerance alone gets 15/15.
+
+## Cost of each option in the browser (the site is static; there is no server)
+
+| | First visit | After that |
+|---|---|---|
+| Keyword search (shipped) | ~0.2 MB compressed index | instant; builds in ~0.1 s, each search < 1 ms |
+| Embeddings | ~44 MB: 21 MB model + 22.5 MB ONNX runtime + 0.9 MB library | cached; per-query cost not measured in-browser (estimate: tens of ms) |
+
+Embeddings would also need either third-party downloads (jsDelivr for the runtime, Hugging Face
+for the model) or self-hosting ~44 MB on Render. No backend is needed for either option.
+
+## Recommendation
+
+* **Ship keyword search now** (done on branch `feature/search`): full text, spelling tolerance,
+  legal synonyms, date awareness, "exact phrase" quotes, and an excerpt showing why each result matched.
+* **Embeddings: only as an opt-in "search by meaning" button**, not on by default. It would load
+  the 44 MB model only when clicked and use the equal-weight hybrid (+11 points on hard queries).
+  For an audience of 5–6 people that one-time download is acceptable on demand; it is not worth
+  forcing on every visitor, and it would make the common case (remembered words) slightly worse.
+
+## Reproduce
+
+    python3 search_eval/make_docs.py                       # builds docs.json from ../.work
+    pip install fastembed numpy                            # in any venv
+    python search_eval/eval2.py queries holdout            # all tables above
+    node search_eval/parity.js                             # browser engine, for comparison
+
+The browser engine (`site/assets/search.js`) was checked against the Python pipeline:
+**270/270 queries give an identical top-10.**
+
+## Limits
+
+* 270 queries is enough to see the direction, not to separate methods a few points apart.
+  The realistic-set differences between the top methods (93–96%) are within noise.
+* Search runs on extracted text; a word missed by extraction cannot be found.

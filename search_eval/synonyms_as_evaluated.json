@@ -1,0 +1,252 @@
+{
+ "_note": "Plain-English <-> Indian criminal-procedure vocabulary. Written from general domain knowledge BEFORE the held-out query set existed. Each group is bidirectional.",
+ "groups": [
+  [
+   "absconding",
+   "absconder",
+   "absconded",
+   "proclaimed",
+   "proclamation",
+   "fugitive",
+   "untraceable",
+   "evading",
+   "on the run",
+   "hiding"
+  ],
+  [
+   "exemption",
+   "exempted",
+   "excused",
+   "excuse",
+   "dispensed",
+   "personal appearance",
+   "skip"
+  ],
+  [
+   "approver",
+   "pardon",
+   "tender of pardon",
+   "state witness",
+   "witness for prosecution",
+   "turned witness",
+   "306"
+  ],
+  [
+   "supreme court",
+   "apex court",
+   "top court",
+   "sc"
+  ],
+  [
+   "high court",
+   "hc",
+   "punjab and haryana"
+  ],
+  [
+   "died",
+   "dead",
+   "death",
+   "passed away",
+   "deceased",
+   "abated",
+   "abatement",
+   "expired"
+  ],
+  [
+   "abroad",
+   "foreign",
+   "overseas",
+   "travel",
+   "visa",
+   "passport",
+   "outside india",
+   "dubai",
+   "uae",
+   "emirates",
+   "singapore",
+   "usa",
+   "america"
+  ],
+  [
+   "warrant",
+   "nbw",
+   "bw",
+   "non bailable",
+   "bailable",
+   "arrest warrant"
+  ],
+  [
+   "arrest",
+   "arrested",
+   "custody",
+   "remand",
+   "remanded",
+   "detained",
+   "jail",
+   "lock up",
+   "judicial custody"
+  ],
+  [
+   "release",
+   "released",
+   "freed",
+   "let out",
+   "bail",
+   "bail bonds",
+   "surety",
+   "bonds"
+  ],
+  [
+   "surrender",
+   "surrendered",
+   "gave himself up",
+   "gave herself up",
+   "turned himself in"
+  ],
+  [
+   "adjourned",
+   "adjournment",
+   "postponed",
+   "put off",
+   "deferred",
+   "pushed",
+   "next date",
+   "fixed for"
+  ],
+  [
+   "covid",
+   "pandemic",
+   "lockdown",
+   "corona",
+   "coronavirus"
+  ],
+  [
+   "leave",
+   "on leave",
+   "holiday",
+   "vacation",
+   "judge away"
+  ],
+  [
+   "medical",
+   "illness",
+   "ill",
+   "sick",
+   "unwell",
+   "hospital",
+   "treatment",
+   "surgery",
+   "health"
+  ],
+  [
+   "complaint",
+   "charge sheet",
+   "chargesheet",
+   "prosecution complaint",
+   "case filed"
+  ],
+  [
+   "charge",
+   "charges",
+   "framing",
+   "framed",
+   "indictment"
+  ],
+  [
+   "discharge",
+   "discharged",
+   "dropped",
+   "let off"
+  ],
+  [
+   "cognizance",
+   "summoning",
+   "summoned",
+   "summons",
+   "notice"
+  ],
+  [
+   "sfio",
+   "serious fraud investigation office",
+   "prosecution",
+   "complainant",
+   "investigating agency"
+  ],
+  [
+   "fraud",
+   "cheating",
+   "embezzlement",
+   "siphoning",
+   "diversion of funds",
+   "scam"
+  ],
+  [
+   "boxes",
+   "cartons",
+   "bulky record",
+   "trunks"
+  ],
+  [
+   "transfer",
+   "transferred",
+   "received on transfer",
+   "new judge",
+   "successor"
+  ],
+  [
+   "video conferencing",
+   "vc",
+   "video link",
+   "virtually",
+   "online"
+  ],
+  [
+   "dismissed",
+   "rejected",
+   "refused",
+   "declined",
+   "turned down",
+   "denied"
+  ],
+  [
+   "allowed",
+   "granted",
+   "accepted",
+   "permitted",
+   "approved"
+  ],
+  [
+   "review",
+   "review petition",
+   "reconsider"
+  ],
+  [
+   "production warrant",
+   "produced",
+   "not produced",
+   "brought from jail"
+  ],
+  [
+   "ahlmad",
+   "record keeper",
+   "clerk",
+   "court staff"
+  ],
+  [
+   "company",
+   "companies",
+   "firm",
+   "authorised representative",
+   "ar",
+   "director",
+   "directors"
+  ],
+  [
+   "property",
+   "attachment",
+   "attached",
+   "assets",
+   "seized"
+  ]
+ ]
+}

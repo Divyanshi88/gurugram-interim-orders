@@ -1,10 +1,11 @@
-let ALL = [], view = [];
+let ALL = [], view = [], ENGINE = null, HITS = new Map(), TERMS = null;
 const $ = s => document.querySelector(s);
 
 const esc = s => String(s == null ? "" : s)
   .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 
-function hl(text, q){
+// plain substring highlighting - only used if the search index failed to load
+function hlPlain(text, q){
   const t = esc(text);
   if (!q) return t;
   const parts = q.split(/\s+/).filter(w => w.length > 1)
@@ -13,19 +14,60 @@ function hl(text, q){
   return t.replace(new RegExp("(" + parts.join("|") + ")", "gi"), "<mark>$1</mark>");
 }
 
+// highlight whole words whose search token was part of the (expanded) query
+function hl(text, q){
+  if (!ENGINE || !TERMS) return hlPlain(text, q);
+  return String(text == null ? "" : text).split(/(\s+)/).map(w => {
+    const t = ENGINE.toks(w);
+    const wt = t.length ? Math.max(...t.map(x => TERMS.get(x) || 0)) : 0;
+    return wt >= 0.8 ? `<mark>${esc(w)}</mark>` : wt > 0 ? `<mark class="syn">${esc(w)}</mark>` : esc(w);
+  }).join("");
+}
+
+function snippetHtml(o){
+  const h = HITS.get(o.sl);
+  if (!h) return "";
+  const sn = ENGINE.snippet(h, TERMS, 38);
+  if (sn.card) return "";                       // matched the summary itself, already shown
+  const body = sn.words.map(x => x.hit >= 0.8 ? `<mark>${esc(x.w)}</mark>`
+                               : x.hit > 0 ? `<mark class="syn">${esc(x.w)}</mark>` : esc(x.w)).join(" ");
+  return `<div class="snip"><span class="snip-l">In the order text</span>${sn.lead ? "… " : ""}${body}${sn.tail ? " …" : ""}</div>`;
+}
+
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const ym = a => MON[a[1] - 1] + " " + a[0];
+
 function render(){
   const q = $("#q").value.trim();
   const onlyC = $("#contested").classList.contains("on");
-  const ql = q.toLowerCase();
-  view = ALL.filter(o => {
-    if (onlyC && !o.contested) return false;
-    if (!ql) return true;
-    return (o.sl + " " + o.date + " " + o.judge + " " + o.defendants + " " +
-            o.summary + " " + o.contentions + " " + o.entries).toLowerCase().includes(ql);
-  });
-  $("#count").textContent = view.length === ALL.length
-    ? ALL.length + " orders"
-    : view.length + " of " + ALL.length + " orders";
+  const byDate = $("#sort").value === "date";
+  let note = "";
+  HITS = new Map(); TERMS = null;
+
+  if (!q) {
+    view = ALL.filter(o => !onlyC || o.contested);
+  } else if (ENGINE) {
+    const r = ENGINE.search(q);
+    TERMS = r.terms;
+    const bySl = new Map(ALL.map(o => [o.sl, o]));
+    view = r.results.map(x => { HITS.set(x.sl, x); return bySl.get(x.sl); })
+                    .filter(o => !onlyC || o.contested);
+    if (byDate) view.sort((a, b) => a.sl - b.sl);
+    if (r.window && !byDate)
+      note = `Orders from ${ym(r.window[0])} to ${ym(r.window[1])} are listed first.`;
+    if (r.phrases.length) note = `Exact wording: “${r.phrases.join("”, “")}”.`;
+  } else {
+    const ql = q.toLowerCase();
+    view = ALL.filter(o => (!onlyC || o.contested) &&
+      (o.sl + " " + o.date + " " + o.judge + " " + o.defendants + " " +
+       o.summary + " " + o.contentions + " " + o.entries).toLowerCase().includes(ql));
+  }
+  $("#count").textContent = !q
+    ? (view.length === ALL.length ? ALL.length + " orders" : view.length + " of " + ALL.length + " orders")
+    : view.length + " matching order" + (view.length === 1 ? "" : "s") +
+      (ENGINE ? (byDate ? " · by date" : " · best match first") : "");
+  $("#qnote").textContent = note;
+  $("#qnote").hidden = !note;
 
   $("#tbody").innerHTML = view.map(o => {
     const long = o.summary.length > 300;
@@ -47,9 +89,11 @@ function render(){
         <span class="s-short">${hl(head, q)}</span>
         ${long ? `<span class="s-full hidden">${hl(o.summary, q)}</span>
                   <button class="more" type="button">show more</button>` : ""}
+        ${q && ENGINE ? snippetHtml(o) : ""}
       </td>
     </tr>`;
-  }).join("");
+  }).join("") || `<tr><td colspan="6" class="empty">No order matches “${esc(q)}”.
+      Try fewer words, or describe it differently.</td></tr>`;
 
   document.querySelectorAll("[data-view]").forEach(b => {
     b.onclick = () => openView(Number(b.dataset.view));
@@ -72,11 +116,17 @@ fetch("data/orders.json").then(r => r.json()).then(d => {
   $("#n-cont").textContent   = d.filter(o => o.contested).length;
   $("#n-judges").textContent = new Set(d.map(o => o.judge)).size;
   render();
-  $("#q").oninput = render;
+  let t = 0;
+  $("#q").oninput = () => { clearTimeout(t); t = setTimeout(render, 120); };
+  $("#sort").onchange = render;
   $("#contested").onclick = e => { e.currentTarget.classList.toggle("on"); render(); };
   $("#clear").onclick = () => {
     $("#q").value = ""; $("#contested").classList.remove("on"); render();
   };
+  // full-text index: if it fails, the page keeps working with plain filtering
+  fetch("data/search.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(sd => { ENGINE = OrderSearch.build(ALL, sd); document.body.classList.add("ft"); render(); })
+    .catch(err => console.warn("Full-text search unavailable, using plain filter:", err));
 }).catch(e => {
   $("#tbody").innerHTML = `<tr><td colspan="6">Could not load the order list (${esc(e.message)}).</td></tr>`;
 });

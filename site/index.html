@@ -24,11 +24,19 @@
   </div>
 
   <div class="tools">
-    <input id="q" type="search" placeholder="Filter by accused number, judge, date or wording — e.g. A-135, approver, proclaimed" autocomplete="off">
+    <input id="q" type="search" placeholder="Search the orders — a line you remember, a name, an accused number, roughly when" autocomplete="off" aria-label="Search the orders">
+    <select class="btn" id="sort" aria-label="Order results by">
+      <option value="best">Best match</option>
+      <option value="date">Date</option>
+    </select>
     <button class="btn" id="contested" type="button">Contested only</button>
     <button class="btn" id="clear" type="button">Clear</button>
     <span class="count" id="count"></span>
   </div>
+  <p class="tips">Searches the full text of every order, not just the summaries. Spelling slips are tolerated
+    (<i>Chohan</i> finds Chauhan), plain words find legal ones (<i>absconding</i> finds proclaimed person),
+    a year or month puts that period first (<i>mid 2021 bail</i>), and <i>"quotation marks"</i> require the exact wording.</p>
+  <p class="qnote" id="qnote" hidden></p>
 
   <table>
     <thead>
@@ -57,7 +65,7 @@
     <p><b>On the summaries.</b> Every accused number, section, citation and date in this table was checked back
     against the text of the order it is attributed to. The characterisation of an argument is editorial judgment
     and has not been reviewed by a lawyer. Read the PDF before relying on any entry.</p>
-    <p>Filtering here is plain text matching. Contextual search is a later stage.</p>
+    <p><b>On search.</b> Search runs in your browser over the text extracted from each order; nothing you type is sent anywhere. Text extraction can miss words in poorly scanned pages, so a search that finds nothing is not proof an order does not mention it.</p>
   </footer>
 
 </div>
@@ -90,6 +98,7 @@
   </div>
 </div>
 
+<script src="assets/search.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>
