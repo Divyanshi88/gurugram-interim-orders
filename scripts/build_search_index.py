@@ -29,8 +29,11 @@ for r, o in zip(kept, site):
     out.append({"sl": o["sl"], "chunks": chunks_of(text)})
 
 syn = json.load(open(os.path.join(ROOT, "scripts", "synonyms.json")))["groups"]
+# plain-English search descriptions (data/plain_descriptions.json); see that file's _note
+plain = json.load(open(os.path.join(ROOT, "data", "plain_descriptions.json"), encoding="utf-8"))["descriptions"]
+assert sorted(map(int, plain)) == [o["sl"] for o in site]
 path = os.path.join(SITE, "data", "search.json")
-json.dump({"v": 1, "orders": out, "synonyms": syn}, open(path, "w", encoding="utf-8"),
+json.dump({"v": 2, "orders": out, "synonyms": syn, "plain": plain}, open(path, "w", encoding="utf-8"),
           ensure_ascii=False, separators=(",", ":"))
 n = sum(len(o["chunks"]) for o in out)
 print(f"wrote {path}: {len(out)} orders, {n} chunks, {os.path.getsize(path)/1e6:.2f} MB")

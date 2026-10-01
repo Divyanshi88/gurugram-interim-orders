@@ -132,3 +132,39 @@ deals with an accused's death (grep: 45, 50, 62, 77, 102, 104, 124), it already 
 orders in the top 5. Restructuring multi-word synonyms moved six such probes by about one result
 each in both directions and cost one realistic query, so it was reverted. Keyword mode is
 unchanged: 270/270 identical top-10 to the evaluated version.
+
+## Round 3: the vocabulary gap (1 Oct 2026)
+
+**A fresh held-out set** (`holdout2.json`, 40 queries: 30 no-shared-words, 10 "what did the court
+decide") was written by a new agent that saw only the corpus. The earlier hard set had guided several
+decisions, and it flattered the live system: on the fresh set, live meaning search finds the right
+order in the top 5 for only 43% (vs 64% on the old no-shared-words queries).
+
+**Tried and rejected** (fresh set used only after these were settled on the other two sets):
+
+| Change | Everyday | Old hard set | Verdict |
+|---|---:|---:|---|
+| Smaller meaning passages (80 / 60 / 40 words) | 95 / 97 / 97% | 80 / 75 / 73% | worse on no-shared-words (64 → 48%) |
+| bge-small / gte-small / e5-small instead of MiniLM | 95 / 97 / 97% | 72 / 77 / 80% | none beats MiniLM's 82%, all +11 MB |
+
+**Adopted: a plain-English description of each order**, 50–110 words, written by AI agents from
+each order's full text (`data/plain_descriptions.json`). It is indexed for both keyword and meaning
+search. Names and numbers were checked against each order (`check_plain.py`); four descriptions that
+named people or courts not in the order (14 flagged → 20, 63, 66, 98 corrected) were fixed by hand.
+Described *events* are not lawyer-reviewed, so on the site a match on a description is shown with an
+amber "AI-written search aid" label, and the verified summary stays as it was.
+
+Measured on the shipped code (`eval_meaning.mjs`), top-5 recall, keyword (button off) / meaning (on):
+
+| | Before | After |
+|---|---:|---:|
+| Everyday set (210) | 96% / 95% | 96% / 94% |
+| ↳ right order **first** | 72% / 73% | 77% / 77% |
+| Fresh held-out set (40) | 18% / 43% | **38% / 70%** |
+| ↳ the 34 fresh queries never read during development | 9% / 38% | 35% / 71% |
+
+**Caveats.** (1) The descriptions and the test queries are both written by AI, so they may share
+phrasing, and the real-world gain may be smaller than measured. (2) While writing the description
+instructions I had read 6 fresh queries (k01, k13, k16, k33, k35, k38) and one example phrase echoed
+k35; the "never read" row excludes them. (3) The old hard set is no longer a fair test here: an
+example phrase in the instructions ("breathing machine") came from it.

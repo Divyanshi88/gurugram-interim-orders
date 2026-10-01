@@ -66,7 +66,8 @@
   function build(orders, searchData, opts) {
     const k1 = 1.2, b = 0.75;
     // weights chosen on the realistic query set (search_eval/); see SEARCH_EVALUATION.md
-    const O = Object.assign({ semWeight: 1, coverGate: 0.5, semWeightCovered: 0.25, coverMinWords: 1 }, opts || {});
+    const O = Object.assign({ semWeight: 1, coverGate: 0.5, semWeightCovered: 0.25, coverMinWords: 1,
+                              plainKeyword: true }, opts || {});
     const bySl = new Map(orders.map(o => [o.sl, o]));
     const chunks = [];                       // {sl, text, len, tf}
     for (const so of searchData.orders) {
@@ -76,10 +77,17 @@
       chunks.push({ sl: o.sl, card: true,
         text: `Order dated ${o.date}. Judge ${o.judge}. ${o.defendants}. ${o.summary} ${o.contentions || ""}` });
     }
+    // optional plain-English description per order (search aid; kept out of the keyword
+    // index unless opts.plainKeyword, and always available to the meaning passages)
+    const plain = searchData.plain || {};
+    const plainStart = chunks.length;
+    for (const o of orders) if (plain[o.sl])
+      chunks.push({ sl: o.sl, card: true, plain: true, text: plain[o.sl] });
     const df = new Map(), post = new Map();
-    let total = 0;
+    let total = 0, nIdx = 0;
     chunks.forEach((c, i) => {
-      const t = toks(c.text); c.len = t.length; total += t.length;
+      if (c.plain && !O.plainKeyword) { c.len = 0; return; }
+      const t = toks(c.text); c.len = t.length; total += t.length; nIdx++;
       const tf = new Map();
       for (const w of t) tf.set(w, (tf.get(w) || 0) + 1);
       for (const [w, f] of tf) {
@@ -88,14 +96,14 @@
         post.get(w).push(i, f);
       }
     });
-    const N = chunks.length, avg = total / N;
+    const N = chunks.length, avg = total / nIdx;
     const vocab = [...df.keys()].sort();
     const SK = new Map();
     for (const v of vocab) if (/^[a-z]+$/.test(v) && v.length >= 4) {
       const k = skel(v); if (!SK.has(k)) SK.set(k, new Set()); SK.get(k).add(v);
     }
     const synT = (searchData.synonyms || []).map(g => g.map(p => toks(p)));
-    const idf = w => { const n = df.get(w) || 0; return Math.log(1 + (N - n + 0.5) / (n + 0.5)); };
+    const idf = w => { const n = df.get(w) || 0; return Math.log(1 + (nIdx - n + 0.5) / (n + 0.5)); };
 
     function fuzzyTerms(w) {
       if (df.has(w) || /^\d+$/.test(w) || w.length < 4) return [];
@@ -157,9 +165,12 @@
       // an accused number alone has no "meaning" to compare: keyword ranking only
       const idOnly = toks(q).length > 0 && toks(q).every(w => /^a\d{1,3}$/.test(w));
       if (sem && !ph.length && !idOnly) {
+        // E has one row per meaning passage; sem.parent[row] = the keyword chunk it was cut from
         const dim = sem.vec.length, E = sem.E, v = sem.vec, eb = new Map();
-        for (let i = 0; i < N; i++) {
-          let d = 0; const o = i * dim;
+        const rows = sem.parent ? sem.parent.length : N;
+        for (let j = 0; j < rows; j++) {
+          const i = sem.parent ? sem.parent[j] : j;
+          let d = 0; const o = j * dim;
           for (let k = 0; k < dim; k++) d += E[o + k] * v[k];
           const cur = eb.get(chunks[i].sl);
           if (!cur || d > cur.score) eb.set(chunks[i].sl, { score: d, chunk: i });
@@ -209,7 +220,7 @@
       }
       const start = Math.max(0, Math.min(bestI - 4, ws.length - words));
       return {
-        card: !!c.card,
+        card: !!c.card && !c.plain, plain: !!c.plain,
         lead: start > 0, tail: start + words < ws.length,
         words: ws.slice(start, start + words).map((w, k) => ({ w, hit: hit[start + k] }))
       };
@@ -224,7 +235,24 @@
       return h.toString(16);
     }
 
-    return { search, snippet, toks, expand, dateWindow, chunkHash,
+    // meaning passages: windows of `size` words every `step` words inside each keyword chunk
+    // (summary chunks are kept whole). size >= 120 gives one passage per chunk.
+    function passages(size, step) {
+      if (!(size > 0 && step > 0)) throw new Error("passages: size and step must be positive numbers");
+      const texts = [], parent = [];
+      chunks.forEach((c, i) => {
+        const ws = c.text.split(" ");
+        if (c.card || ws.length <= size) { texts.push(c.text); parent.push(i); return; }
+        for (let a = 0; ; a += step) {
+          const end = Math.min(ws.length, a + size);
+          texts.push(ws.slice(Math.max(0, end - size), end).join(" ")); parent.push(i);
+          if (end >= ws.length) break;
+        }
+      });
+      return { texts, parent: Int32Array.from(parent) };
+    }
+
+    return { search, snippet, toks, expand, dateWindow, chunkHash, passages,
              chunkTexts: () => chunks.map(c => c.text), stats: { chunks: N, vocab: vocab.length } };
   }
 

@@ -1,0 +1,391 @@
+[
+ {
+  "qid": "k01",
+  "kind": "nolex2",
+  "query": "a court worker hid or threw away the notice that was meant to be put up, so the wanted-person announcement never actually went out",
+  "gold": [
+   83
+  ],
+  "note": "grep: destroy|withh; naib court (83 only substantive)"
+ },
+ {
+  "qid": "k02",
+  "kind": "nolex2",
+  "query": "physician on a screen call said the man had caught the bug, was on a breathing machine with badly hurt breathing, but could be shifted out in a couple of weeks",
+  "gold": [
+   48
+  ],
+  "note": "grep: bipap|fibrosis|covid"
+ },
+ {
+  "qid": "k03",
+  "kind": "nolex2",
+  "query": "were some tax people allowed to go inside the prison and question one of the men about a different import duty probe?",
+  "gold": [
+   69
+  ],
+  "note": "grep: customs|revenue intelligence; 63/66 are bare adjournments of the application"
+ },
+ {
+  "qid": "k04",
+  "kind": "nolex2",
+  "query": "judge sorted out muddled names in an earlier ruling where people were dropped or put in that shouldn't have been",
+  "gold": [
+   24
+  ],
+  "note": "grep: clerical|copy.?paste"
+ },
+ {
+  "qid": "k05",
+  "kind": "nolex2",
+  "query": "prison passed the two brothers to cops from another state without asking the judge, how come",
+  "gold": [
+   8,
+   9
+  ],
+  "note": "grep: without permission|transferring the custody (8,9)"
+ },
+ {
+  "qid": "k06",
+  "kind": "nolex2",
+  "query": "mum let off from coming to court because her toddler was sick",
+  "gold": [
+   36,
+   38
+  ],
+  "note": "grep: minor child (36,38; 87/88 unrelated)"
+ },
+ {
+  "qid": "k07",
+  "kind": "nolex2",
+  "query": "she got her travel document back for a few weeks only so her kid's one could be redone",
+  "gold": [
+   88
+  ],
+  "note": "grep: minor child|passport (88)"
+ },
+ {
+  "qid": "k08",
+  "kind": "nolex2",
+  "query": "judge told everyone not to phone or walk up to the clerks and office people before the matter gets called around midday",
+  "gold": [
+   133,
+   134
+  ],
+  "note": "grep: 12[:.]30|court staff (133,134)"
+ },
+ {
+  "qid": "k09",
+  "kind": "nolex2",
+  "query": "the main bundle of papers never reached the judge and the clerk was told to go find it",
+  "gold": [
+   143
+  ],
+  "note": "grep: trace; case file.*not put up (143)"
+ },
+ {
+  "qid": "k10",
+  "kind": "nolex2",
+  "query": "officials shouted it out outside his old home, pasted it up by the entrance and called it out in the bazaar",
+  "gold": [
+   149
+  ],
+  "note": "grep: locality board|main market|boundary wall"
+ },
+ {
+  "qid": "k11",
+  "kind": "nolex2",
+  "query": "judge wanted an ad in the paper, paid for by the investigators, saying the two men must turn up",
+  "gold": [
+   146
+  ],
+  "note": "grep: newspaper"
+ },
+ {
+  "qid": "k12",
+  "kind": "nolex2",
+  "query": "jail claimed he was out temporarily but this judge hadn't let him out at all",
+  "gold": [
+   55,
+   56
+  ],
+  "note": "grep: interim bail till 17|no such (55); 56 records interim bail was from high court"
+ },
+ {
+  "qid": "k13",
+  "kind": "nolex2",
+  "query": "the internet call to the prison didn't work so the prisoners couldn't appear on screen",
+  "gold": [
+   45,
+   46,
+   49
+  ],
+  "note": "grep: not connected|vc not properly working"
+ },
+ {
+  "qid": "k14",
+  "kind": "nolex2",
+  "query": "her lawyer dropped the request to get her travel papers back since it no longer mattered",
+  "gold": [
+   138
+  ],
+  "note": "grep: infructuous.*passport (138)"
+ },
+ {
+  "qid": "k15",
+  "kind": "nolex2",
+  "query": "after one of them agreed to tell all against the rest, his account was put in a closed cover and kept aside by the clerk",
+  "gold": [
+   109
+  ],
+  "note": "grep: sealed|envelope"
+ },
+ {
+  "qid": "k16",
+  "kind": "nolex2",
+  "query": "clinic just sent a nurse with some printouts who couldn't say how sick he really was",
+  "gold": [
+   47
+  ],
+  "note": "grep: nursing; ICU chart"
+ },
+ {
+  "qid": "k17",
+  "kind": "nolex2",
+  "query": "top court pointed out the money was borrowed long before he even joined the company's board",
+  "gold": [
+   74
+  ],
+  "note": "grep: interim bail.*supreme court 29.10.2021; loan before directorship (74)"
+ },
+ {
+  "qid": "k18",
+  "kind": "nolex2",
+  "query": "numbers guy with relatives in the Gulf keeps getting allowed to fly out as long as he puts up land or a big sum to cover it",
+  "gold": [
+   67,
+   89,
+   94,
+   97,
+   120
+  ],
+  "note": "grep: uae|dubai|travel abroad + bohra (119 only mentions in roll-call)"
+ },
+ {
+  "qid": "k19",
+  "kind": "nolex2",
+  "query": "lender was told it can't cash the guarantor's fixed deposit without the judge's okay",
+  "gold": [
+   60,
+   76,
+   79
+  ],
+  "note": "grep: encash (76,79); fdr retained + intimation to bank (60)"
+ },
+ {
+  "qid": "k20",
+  "kind": "nolex2",
+  "query": "someone's car was put up as a guarantee to get him out of jail and the transport office was informed",
+  "gold": [
+   105,
+   106,
+   107,
+   108
+  ],
+  "note": "grep: vehicle|registration authority"
+ },
+ {
+  "qid": "k21",
+  "kind": "nolex2",
+  "query": "everything got pushed off for months because of the pandemic",
+  "gold": [
+   41,
+   42,
+   44
+  ],
+  "note": "grep: covid|corona (48/50 mention covid for other reasons)"
+ },
+ {
+  "qid": "k22",
+  "kind": "nolex2",
+  "query": "asked for a digital version of all the papers and got told no",
+  "gold": [
+   4
+  ],
+  "note": "grep: soft copy (4 declined; 2 deferred; 12 allowed via pen drive)"
+ },
+ {
+  "qid": "k23",
+  "kind": "nolex2",
+  "query": "investigators gave out all their files on a USB stick",
+  "gold": [
+   12,
+   36,
+   38,
+   39,
+   145
+  ],
+  "note": "grep: pen ?drive|soft copy (7 is the complaint annexure itself)"
+ },
+ {
+  "qid": "k24",
+  "kind": "nolex2",
+  "query": "jail couldn't bring him to court because there weren't enough cops to travel along with him",
+  "gold": [
+   12,
+   35,
+   55
+  ],
+  "note": "grep: escort|police personnel"
+ },
+ {
+  "qid": "k25",
+  "kind": "nolex2",
+  "query": "clerk didn't send out the arrest papers for two of them and got a telling-off",
+  "gold": [
+   148
+  ],
+  "note": "grep: not been issued by the ahlmad (148); 39/40 'not issued' are about missing addresses"
+ },
+ {
+  "qid": "k26",
+  "kind": "nolex2",
+  "query": "his missus promised the court he'd show up within days",
+  "gold": [
+   92
+  ],
+  "note": "grep: wife (92 peeyush aggarwal)"
+ },
+ {
+  "qid": "k27",
+  "kind": "nolex2",
+  "query": "the people who agreed to testify against the others kept turning up but their statements never got taken, officer missing or out of time or judge away",
+  "gold": [
+   52,
+   70,
+   73,
+   81
+  ],
+  "note": "grep: approver + investigating officer|court time|casual leave"
+ },
+ {
+  "qid": "k28",
+  "kind": "nolex2",
+  "query": "police delivering the papers were told to show they really went to those homes",
+  "gold": [
+   62
+  ],
+  "note": "grep: proof of.{0,20}visit"
+ },
+ {
+  "qid": "k29",
+  "kind": "nolex2",
+  "query": "lawyer didn't put his name down on the register for the two women, so the court just counted them as there anyway",
+  "gold": [
+   51
+  ],
+  "note": "grep: attendance sheet + omitted to sign (51)"
+ },
+ {
+  "qid": "k30",
+  "kind": "nolex2",
+  "query": "judge called the prison's excuse for not bringing him rubbish and threatened the police bosses",
+  "gold": [
+   21
+  ],
+  "note": "grep: without any basis (21)"
+ },
+ {
+  "qid": "k31",
+  "kind": "ruling2",
+  "query": "were the investigators allowed to split off the people nobody could find and go ahead with the rest?",
+  "gold": [
+   58
+  ],
+  "note": "grep: separate trial|299 (58 dismissed)"
+ },
+ {
+  "qid": "k32",
+  "kind": "ruling2",
+  "query": "could the man hiding that his bail plea was still pending upstairs get his arrest order called back?",
+  "gold": [
+   64,
+   65
+  ],
+  "note": "grep: sudhir mehta|concealment|70\\(2\\)"
+ },
+ {
+  "qid": "k33",
+  "kind": "ruling2",
+  "query": "was she allowed to take her passport for a short holiday in southeast Asia when she wouldn't say why she was going",
+  "gold": [
+   140
+  ],
+  "note": "grep: vietnam"
+ },
+ {
+  "qid": "k34",
+  "kind": "ruling2",
+  "query": "could the guy on the run walk in voluntarily and get bail without actually being locked up beforehand?",
+  "gold": [
+   134
+  ],
+  "note": "grep: surrender.*regular bail|not maintainable (134 sidharth chauhan)"
+ },
+ {
+  "qid": "k35",
+  "kind": "ruling2",
+  "query": "after people got pardoned for switching sides, do they still count as accused and still have to keep coming?",
+  "gold": [
+   123,
+   143
+  ],
+  "note": "grep: pardon|cease to be an accused|list of witnesses"
+ },
+ {
+  "qid": "k36",
+  "kind": "ruling2",
+  "query": "was his bail thrown out and his guarantor's money taken after he didn't turn up?",
+  "gold": [
+   16
+  ],
+  "note": "grep: 446|forfeit (16 raj kumar modi)"
+ },
+ {
+  "qid": "k37",
+  "kind": "ruling2",
+  "query": "could someone just have their lawyer stand in for them instead of coming personally?",
+  "gold": [
+   98
+  ],
+  "note": "grep: 317 application dismissed (98)"
+ },
+ {
+  "qid": "k38",
+  "kind": "ruling2",
+  "query": "could the man who refused to hand himself in get his arrest order scrapped?",
+  "gold": [
+   25
+  ],
+  "note": "grep: cancel.*warrant + not maintainable + nitin rathore (25)"
+ },
+ {
+  "qid": "k39",
+  "kind": "ruling2",
+  "query": "did those corporate managers getting bail still have to hand over their passports and stay in the country?",
+  "gold": [
+   22
+  ],
+  "note": "grep: passport + relaxed and recalled (22)"
+ },
+ {
+  "qid": "k40",
+  "kind": "ruling2",
+  "query": "were people whose pleas for advance protection had been rejected still let off from coming?",
+  "gold": [
+   42,
+   45
+  ],
+  "note": "grep: exemption + anticipatory bail dismissed + no protection (42 jindal, 45 shukla)"
+ }
+]

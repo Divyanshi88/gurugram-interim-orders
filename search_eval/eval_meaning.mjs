@@ -20,7 +20,7 @@ const E = new Int8Array(fs.readFileSync(path.join(SITE, "data/emb_minilm.bin")).
 const embed = await pipeline("feature-extraction", meta.model, { dtype: meta.dtype });
 
 const pct = x => (x * 100).toFixed(0).padStart(4) + "%";
-for (const set of ["queries", "holdout"]) {
+for (const set of ["queries", "holdout", "holdout2"]) {
   const Q = JSON.parse(fs.readFileSync(path.join(EV, set + ".json")));
   const per = {};
   for (const q of Q) {

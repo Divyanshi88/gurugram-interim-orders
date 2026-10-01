@@ -31,8 +31,9 @@ function snippetHtml(o){
   if (sn.card) return "";                       // matched the summary itself, already shown
   const body = sn.words.map(x => x.hit >= 0.8 ? `<mark>${esc(x.w)}</mark>`
                                : x.hit > 0 ? `<mark class="syn">${esc(x.w)}</mark>` : esc(x.w)).join(" ");
-  const lab = h.keyword ? "In the order text" : "Closest passage by meaning";
-  return `<div class="snip"><span class="snip-l">${lab}</span>${sn.lead ? "… " : ""}${body}${sn.tail ? " …" : ""}</div>`;
+  const lab = sn.plain ? "Matched our plain-English description of this order (AI-written search aid; check the order itself)"
+            : h.keyword ? "In the order text" : "Closest passage by meaning";
+  return `<div class="snip${sn.plain ? " plain" : ""}"><span class="snip-l">${lab}</span>${sn.lead ? "… " : ""}${body}${sn.tail ? " …" : ""}</div>`;
 }
 
 const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
