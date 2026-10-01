@@ -61,6 +61,7 @@ function draw(q, sem){
     view = ALL.filter(o => !onlyC || o.contested);
   } else if (ENGINE) {
     const r = ENGINE.search(q, sem ? MEANING_N : 0, sem);
+    if (!r.semUsed) sem = null;                  // exact phrase or accused number: keyword only
     TERMS = r.terms;
     const bySl = new Map(ALL.map(o => [o.sl, o]));
     view = r.results.map(x => { HITS.set(x.sl, x); return bySl.get(x.sl); })
@@ -174,7 +175,7 @@ function toggleMeaning(){
       Meaning.state = "on"; save("on");
       setMeaningBtn(MEANING_LABEL + " ✓", true);
       $("#mnote").textContent = "Meaning search is on: results also include orders that describe the same thing in different words. " +
-        "For an exact line you remember, keyword search (button off) is more precise.";
+        "When your words closely match an order's text, the exact match still leads.";
       render();
     })
     .catch(err => {

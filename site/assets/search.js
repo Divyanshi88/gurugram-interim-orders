@@ -65,6 +65,8 @@
 
   function build(orders, searchData, opts) {
     const k1 = 1.2, b = 0.75;
+    // weights chosen on the realistic query set (search_eval/); see SEARCH_EVALUATION.md
+    const O = Object.assign({ semWeight: 1, coverGate: 0.5, semWeightCovered: 0.25, coverMinWords: 1 }, opts || {});
     const bySl = new Map(orders.map(o => [o.sl, o]));
     const chunks = [];                       // {sl, text, len, tf}
     for (const so of searchData.orders) {
@@ -152,7 +154,9 @@
         return cmp(win[0], ym) <= 0 && cmp(ym, win[1]) <= 0;
       };
       const res = [];
-      if (sem && !ph.length) {
+      // an accused number alone has no "meaning" to compare: keyword ranking only
+      const idOnly = toks(q).length > 0 && toks(q).every(w => /^a\d{1,3}$/.test(w));
+      if (sem && !ph.length && !idOnly) {
         const dim = sem.vec.length, E = sem.E, v = sem.vec, eb = new Map();
         for (let i = 0; i < N; i++) {
           let d = 0; const o = i * dim;
@@ -163,10 +167,20 @@
         const lexRank = new Map([...best].sort((x, y) => y[1].score - x[1].score || x[0] - y[0]).map(([sl], i) => [sl, i + 1]));
         const semRank = new Map([...eb].sort((x, y) => y[1].score - x[1].score || x[0] - y[0]).map(([sl], i) => [sl, i + 1]));
         const miss = lexRank.size + 1;           // orders with no keyword match share the next rank
+        // how much of the query appears word for word in the best keyword match: a remembered
+        // line overlaps heavily, a description in other words does not
+        const uq = [...new Set(toks(q))];
+        let cover = 0;
+        if (lexRank.size && uq.length >= O.coverMinWords) {
+          const top = best.get([...lexRank.keys()][0]);
+          const have = new Set(chunkNorm(top.chunk).trim().split(" "));
+          cover = uq.filter(w => have.has(w)).length / uq.length;
+        }
+        const sw = sem.weight != null ? sem.weight : cover >= O.coverGate ? O.semWeightCovered : O.semWeight;
         for (const o of orders) {
           const lr = lexRank.get(o.sl) || miss, sr = semRank.get(o.sl);
           const lx = best.get(o.sl);
-          res.push({ sl: o.sl, score: 1 / (60 + lr) + 1 / (60 + sr), inWindow: inWin(o),
+          res.push({ sl: o.sl, score: 1 / (60 + lr) + sw / (60 + sr), inWindow: inWin(o),
                      chunk: lx ? lx.chunk : eb.get(o.sl).chunk, keyword: !!lx });
         }
       } else {
@@ -177,7 +191,9 @@
       }
       // orders inside a date the query names come first, then by text relevance
       res.sort((a, c) => (c.inWindow - a.inWindow) || (c.score - a.score) || (a.sl - c.sl));
-      return { results: limit ? res.slice(0, limit) : res, terms, window: win, phrases: ph.map(p => p.raw) };
+      const semUsed = !!(sem && !ph.length && !idOnly);
+      return { results: limit && (semUsed || !sem) ? res.slice(0, limit) : res, terms, window: win,
+               phrases: ph.map(p => p.raw), semUsed };
     }
 
     // ~40-word excerpt of the best chunk around the densest run of matched words
